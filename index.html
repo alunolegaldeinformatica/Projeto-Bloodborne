@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central Bloodborne | Guia de Caçador</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="description" content="Guia completo de Bloodborne: lore dos chefes, builds de armas, segredos de Yharnam e cálices do labirinto.">
 <!--Codagem para o link ficar bem apresentável no compartilhamento-->
     <meta property="og:title" content="Central Bloodborne - Guias, Lore e Dicas">
@@ -13,10 +14,10 @@
 <body>
 <!--Topo do site-->
     <header>
-    <h1>Central Bloodborne</h1>
+    <h1 style="font-size: 50px;">Central Bloodborne</h1>
       <p><em>"Anule a praga dos homens. Que a caçada comece."</em></p>
 <!--Menu de navegação-->
-    <nav>
+    <nav class="barra-navegacao">
      <a href="#introducao">A Caçada</a>
      <a href="#historia">História</a>
      <a href="#armas">Armas</a>
@@ -28,10 +29,17 @@
 <!--Introdução-->
     <section id="introducao">
         <h2>A Cidade de Yharnam</h2>
-          <p>Você acorda em uma maca em uma clínica misteriosa. Seu sangue foi contaminado e agora você está preso ao <strong>Sonho do Caçador</strong>. Seu objetivo é explorar as ruas de uma cidade gótica amaldiçoada e sobreviver à noite mais longa da sua vida.</p>
+    <div class="introducao-container">
+    <div class="introducao-texto">
+          <p>Você acorda na maca de uma clínica misteriosa. Seu sangue foi contaminado e agora você está preso ao <strong>Sonho do Caçador</strong>. Seu objetivo é explorar as ruas de uma cidade gótica amaldiçoada e sobreviver à noite mais longa da sua vida.</p>
           <p><strong>Yharnam</strong> já foi uma metrópole gloriosa, famosa por suas milagrosas curas medicinais baseadas no uso do sangue. No entanto, uma terrível praga endêmica se espalhou, transformando quase todos os seus habitantes em feras grotescas e violentas.</p>
-    <img src="./imagens/imagem da introdução.jpg" alt="Caçador de Yharnam">
-          <p>Como um caçador estrangeiro, restam apenas duas opções: dominar o combate brutal ou se tornar mais uma vítima da noite.</p>
+          <p>Nesta noite de caçada, as portas das casas estão trancadas e os poucos cidadãos que restaram sãos observam as ruas através de janelas lacradas, segurando amuletos de incenso para afastar o odor da carne podre. Aqueles que ousam caminhar pelas calçadas góticas perderam a razão há muito tempo, vagando com tochas e cutelos à procura de qualquer estrangeiro para linchar.</p>
+          <p>O ambiente é hostil e sufocante: o eco de gritos distantes se mistura ao badalar lúgubre dos sinos da Igreja da Cura. Cada beco escuro esconde um perigo mortal, desde corvos carniceiros deformados até feras colossais que espreitam nos telhados das catedrais vitorianas. Não há mapa, não há porto seguro e a linha que separa a sanidade da loucura se desgasta a cada gota de sangue derramada.</p>
+          <p>Para sobreviver, você precisará mais do que apenas força bruta. Será necessário desvendar os segredos ocultos da Igreja, compreender os sussurros dos Grandes que observam do cosmos e sangrar até que a última fera seja eliminada. Prepare-se, pois em Yharnam, a morte é apenas o começo de um novo despertar no pesadelo.</p>
+    </div>
+          <img src="./imagens/imagem da introdução.jpg" alt="Caçador de Yharnam">
+    </div>
+          <p style="text-align: center; font-size: 24px;">Como um caçador estrangeiro, restam apenas duas opções: dominar o combate brutal ou se tornar mais uma vítima da noite.</p>
     </section>
 <!--História-->
     <section id="historia">
@@ -62,21 +70,76 @@
           <p>No início do jogo, ao visitar o Sonho do Caçador pela primeira vez, você receberá o direito de escolher uma das três armas de truque criadas pela Oficina. Cada uma dita um estilo de jogo diferente:</p>
         <ul>
             <li>
-                <strong>Cutelo-Serra (Saw Cleaver):</strong>
-                A arma mais icônica do jogo. Ela é equilibrada, rápida e causa dano extra do tipo <em>Serrilhado</em>, que destrói feras comuns muito mais rápido. É a escolha ideal para iniciantes.
-                <img src="imagens/cutelo.webp" alt="Cutelo-Serra de Bloodborne" width="300">
+                <p><strong>Cutelo-Serra (Saw Cleaver):</strong> A arma mais icônica do jogo. Ela é equilibrada, rápida e causa dano extra do tipo <em>Serrilhado</em>, que destrói feras comuns muito mais rápido. É a escolha ideal para iniciantes.</p>
+                <img src="imagens/cutelo.webp" alt="Cutelo-Serra de Bloodborne" width="400">
             </li>
             <li>
-                <strong>Machado de Caçador (Hunter Axe):</strong> 
-                Focado em força e controle de grupo. Quando transformado, ele se torna uma alabarda longa capaz de derrubar vários inimigos de uma vez com o seu famoso ataque carregado giratório.
-                <img src="imagens/machado.webp" alt="Machado de Caçador de Bloodborne" width="300">
+                <p><strong>Machado de Caçador (Hunter Axe):</strong> Focado em força e controle de grupo. Quando transformado, ele se torna uma alabarda longa capaz de derrubar vários inimigos de uma vez com o seu famoso ataque carregado giratório.</p>
+                <img src="imagens/machado.webp" alt="Machado de Caçador de Bloodborne" width="400">
             </li>
             <li>
-                <strong>Bengala-Chicote (Threaded Cane):</strong>
-                A opção mais elegante e ágil. No modo normal, funciona como uma espada rápida; no modo transformado, vira um chicote segmentado com longo alcance, ideal para caçadores focados em destreza.
-                <img src="imagens/bengala.webp" alt="Bengala de Bloodborne" width="300">
+                <p><strong>Bengala-Chicote (Threaded Cane):</strong> A opção mais elegante e ágil. No modo normal, funciona como uma espada rápida; no modo transformado, vira um chicote segmentado com longo alcance, ideal para caçadores focados em destreza.</p>
+                <img src="imagens/bengala.webp" alt="Bengala de Bloodborne" width="400">
             </li>
         </ul>
+    </section>
+<!--Principais Chefes-->
+    <section id="chefes">
+        <h2>Os Grandes Desafios da Caçada</h2>
+          <p>Para libertar Yharnam do pesadelo, você deve derrotar as maiores abominações da Igreja da Cura e as divindades cósmicas que regem este mundo:</p>
+               <!--FERA CLERICAL-->
+            <dl>
+                <dt><strong>Fera Clerical (Cleric Beast)</strong></dt>
+                <dd>
+                    <p>O teste de batismo na Grande Ponte. Uma fera gigantesca e barulhenta que mostra o tamanho do perigo em Yharnam. <em>Dica:</em> Feras têm pavor de fogo; use Coquetéis Molotov.</p>
+                    <img src="./imagens/bestaclerical.webp" alt="Fera Clerical" width="500">
+                </dd>
+               <!--PADRE GASCOIGNE-->
+                <dt><strong>Padre Gascoigne (Father Gascoigne)</strong></dt>
+                <dd>
+                    <p>O primeiro grande muro do jogo. Um caçador veterano corrompido que se transforma em fera no meio do cemitério. Exige que você domine o contra-ataque com a pistola.</p>
+                    <img src="./imagens/gascoigne.jpg" alt="Padre Gascoigne" width="500">
+                </dd>
+
+                <!--VIGÁRIA AMELIA-->
+                <dt><strong>Vigário Amelia (Vicar Amelia)</strong></dt>
+                <dd>
+                    <p>A líder da Igreja da Cura se transforma em uma criatura peluda e gigante no altar da Grande Catedral. Ela se cura durante a luta, exigindo agressividade constante.</p>
+                    <img src="./imagens/amelia.webp" alt="Vigário Amelia" width="500">
+                </dd>
+
+                <!--GEHRMAN-->
+                <dt><strong>Gehrman, o Primeiro Caçador</strong></dt>
+                <dd>
+                    <p>O confronto final sob a grande árvore do Sonho. Uma batalha poética, rápida e brutal ao som de um dos temas musicais mais marcantes do jogo.</p>
+                    <img src="./imagens/gehrman.webp" alt="Gehrman segurando sua foice" width="500">
+                </dd>
+            </dl>
+
+            <h2>Pesadelo do Caçador (DLC)</h2>
+            <dl>
+                <!--LUDWIG-->
+                <dt><strong>Ludwig, o Lâmina Sagrada</strong></dt>
+                <dd>
+                    <p>Metade homem, metade cavalo mutante. No meio da luta, ele recupera sua sanidade ao reencontrar sua lendária Espada do Luar, mudando completamente o estilo do combate.</p>
+                    <img src="./imagens/ludwig.webp" alt="Ludwig segurando a espada do luar" width="500">
+                </dd>
+
+                <!--LADY MARIA-->
+                <dt><strong>Lady Maria da Torre do Relógio Astral</strong></dt>
+                <dd>
+                    <p>Discípula de Gehrman. Ela utiliza suas espadas gêmeas Rakuyo e, conforme perde vida, passa a usar seu próprio sangue e fogo para aumentar o alcance dos ataques.</p>
+                    <img src="./imagens/ladymaria.jpg" alt="Lady Maria sentada na cadeira da torre do relógio" width="500">
+                </dd>
+                <!--ÓRFÃO DE KOS-->
+                <dt><strong>Órfão de Kos (Orphan of Kos)</strong></dt>
+                <dd>
+                    <p>O recém-nascido de uma divindade morta chora na praia do vilarejo e ataca com uma agressividade implacável, velocidade extrema e gritos ensurdecedores. É considerado um dos chefes mais difíceis da história dos videogames.</p>
+                    <img src="./imagens/orfaodekos.jpg" alt="Órfão de Kos segurando sua arma de placenta na praia gélida" width="500">
+                </dd>
+            </dl>
+        </section>
+        </dl>
     </section>
     </main>
 </body>

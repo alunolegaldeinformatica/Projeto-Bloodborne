@@ -1,0 +1,145 @@
+/*Configuração geral*/
+body {
+    background-color: #121214;
+    color: #e1e1e6;        
+    font-family: 'Georgia', serif; 
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+/*Estilização dos títulos*/
+h1, h2, h3 {
+    color: #990000;
+    border-bottom: 1px solid #29292e;
+    padding-bottom: 5px;
+}
+/*Estilização do Menu de Navegação*/
+nav a {
+    color: #a8a8b3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+}
+nav a:hover {
+    color: #990000;
+}
+.barra-navegacao {
+    display: flex;
+    justify-content: center;  
+    background-color: #1a1a1e;
+    border: 1px solid #2d2d34; 
+    border-radius: 6px;       
+    padding: 10px 0;         
+    margin: 20px 0 35px 0;     
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+/*DESIGN DA SEÇÃO DE INTRODUÇÃO*/
+.introducao-container {
+    display: flex;
+    align-items: flex-start;  
+    justify-content: space-between;
+    gap: 40px;  
+    margin-top: 20px;
+}
+.introducao-texto {
+    flex: 1;                   
+}
+.introducao-texto p {
+    margin-top: 0;
+    margin-bottom: 20px;       
+    font-size: 1.1rem;
+    line-height: 1.7;         
+}
+/*DESIGN DA SEÇÃO DE LORE*/
+
+/*Centralização e limitação do tamanho da história para não espalhar na tela toda*/
+#historia {
+    max-width: 800px;         
+    margin: 60px auto;       
+    padding: 0 20px;
+}
+
+/*Destaca o título principal da Lore*/
+#historia h2 {
+    text-align: center;      
+    font-size: 2rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;    
+}
+
+/*Transformação dos subtítulos (H3) em cabeçalhos*/
+#historia h3 {
+    color: #ff3333;            
+    background-color: #16161a; 
+    padding: 10px 15px;        
+    border-left: 4px solid #8b0000; /*Barra vertical vermelha idêntica à de menus góticos*/
+    border-bottom: none;       
+    margin-top: 40px;          
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* 4. Melhora o espaçamento e estilo dos parágrafos da história */
+#historia p {
+    font-size: 1.1rem;
+    line-height: 1.8;          /* Dá mais espaço entre as linhas de texto */
+    color: #cbcbd7;            /* Um tom cinza ligeiramente mais suave para não agredir a visão */
+    text-align: justify;       /* Alinha o texto perfeitamente nas duas margens */
+    margin-bottom: 20px;
+}
+/*Estilização de imagens*/
+img {
+    max-width: 100%;  /*Ajuste para telas menores*/
+    height: auto;
+    border: 2px solid #29292e; 
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/*Design dos cards de armas*/
+
+#armas ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/*Transformando cada arma em um bloco card fechado*/
+#armas ul li {
+    display: flex;
+    align-items: center;      
+    background-color: #1a1a1e; 
+    border: 1px solid #2d2d34; 
+    border-radius: 8px;       
+    padding: 25px;            
+    margin-bottom: 25px;     
+    gap: 30px;                 
+}
+
+/*Controle de texto dentro do card*/
+#armas ul li p {
+    flex: 1;                   
+    margin: 0;
+    font-size: 1.1rem;       
+    color: #e1e1e6;
+    line-height: 1.6;
+}
+
+/*Título das armas em vermelho sangue*/
+#armas ul li p strong {
+    color: #990000;
+    font-size: 1.2rem;
+    display: block;        
+    margin-bottom: 8px;      
+}
+
+/*Controle de imagem da arma*/
+#armas ul li img {
+    width: 320px;          
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #3e3e4a;
+    flex-shrink: 0;            
+    margin: 0 !important;
+}
+
