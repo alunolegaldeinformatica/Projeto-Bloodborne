@@ -7,50 +7,104 @@ body {
     padding: 20px;
     line-height: 1.6;
 }
+/*Adição do plano de fundo do site*/
+body {
+    /* O seu banner antigo agora vira o fundo infinito do site */
+    background-image: linear-gradient(rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), 
+    url("./imagens/fundo.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    background-color: #121214;
+    color: #e1e1e6;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0 0 20px 0;
+    line-height: 1.6;
+}
+.hero-overlay {
+    /* Reduzimos a opacidade da fumaça preta para 60% no topo e 80% na base (antes era 85% e 95%) */
+    background: linear-gradient(to bottom, rgba(10, 10, 12, 0.60) 0%, rgba(18, 18, 20, 0.80) 100%);
+    padding: 60px 40px;        
+}
 /*Estilização dos títulos*/
 h1, h2, h3 {
     color: #990000;
-    border-bottom: 1px solid #29292e;
     padding-bottom: 5px;
 }
-/*Estilização do Menu de Navegação*/
-nav a {
-    color: #a8a8b3;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0 10px;
-}
-nav a:hover {
-    color: #990000;
-}
+/*Estilização da barra de navegação*/
 .barra-navegacao {
     display: flex;
-    justify-content: center;  
-    background-color: #1a1a1e;
+    justify-content: center;   
+    background-color: #1a1a1e; /* Fundo cinza escuro para destacar no banner */
     border: 1px solid #2d2d34; 
-    border-radius: 6px;       
-    padding: 10px 0;         
-    margin: 20px 0 35px 0;     
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;        
+    padding: 10px 0;           
+    margin: 25px auto 40px auto; /* Centraliza e afasta dos textos */
+    max-width: 600px;          /* Limita a largura para não esticar na tela toda */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
 }
-/*DESIGN DA SEÇÃO DE INTRODUÇÃO*/
-.introducao-container {
-    display: flex;
-    align-items: flex-start;  
-    justify-content: space-between;
-    gap: 40px;  
-    margin-top: 20px;
-}
-.introducao-texto {
-    flex: 1;                   
-}
-.introducao-texto p {
-    margin-top: 0;
-    margin-bottom: 20px;       
+/*Estilização dos botões*/
+.barra-navegacao a {
+    color: #a8a8b3;            /* Cor cinza clara elegante */
+    text-decoration: none;     /* Remove o sublinhado feio */
+    font-family: 'Georgia', serif;
     font-size: 1.1rem;
-    line-height: 1.7;         
+    font-weight: bold;
+    padding: 8px 24px;         /* Dá espaço para o botão respirar */
+    border-radius: 4px;        
+    transition: all 0.3s ease; /* Transição suave de cor */
 }
-/*DESIGN DA SEÇÃO DE LORE*/
+/*Fazendo o botão acender em vermelho*/
+.barra-navegacao a:hover {
+    color: #ffffff;            
+    background-color: #8b0000; /* Vermelho-sangue oficial */
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.6); 
+}
+/*Design do banner*/
+.hero-banner {
+    background-image: url("./imagens/banner.png");
+    background-size: cover;
+    background-position: center 40%; 
+    background-attachment: scroll;    
+    border-bottom: 3px solid #8b0000; 
+    margin: 0 0px 40px 0px;       
+}
+/*Espaçamento das bordas do banner*/
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(10, 10, 12, 0.85) 0%, rgba(18, 18, 20, 0.95) 100%);
+    padding: 60px 40px;        /* Afasta o texto do topo e das laterais da tela */
+}
+/* Centralização dos títulos do banner*/
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+header h1 {
+    font-size: 3.2rem;         /* Título principal grande e imponente */
+    margin-bottom: 15px;
+    border-bottom: none;       /* Remove a linha vermelha que corta o título */
+}
+
+#introducao {
+    max-width: 900px;          /* Centraliza o texto e impede que vá até as pontas */
+    margin: 0 auto;                   
+}
+
+#introducao h2 {
+    font-size: 2.2rem;
+    border-bottom: none;       /* Remove a linha vermelha abaixo de 'A Cidade de Yharnam' */
+    margin-bottom: 25px;
+}
+#introducao p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #e1e1e6;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra para ler perfeitamente sobre o fundo */
+    text-align: justify;
+}
 
 /*Centralização e limitação do tamanho da história para não espalhar na tela toda*/
 #historia {
@@ -91,7 +145,7 @@ nav a:hover {
 img {
     max-width: 100%;  /*Ajuste para telas menores*/
     height: auto;
-    border: 2px solid #29292e; 
+    border: none; 
     border-radius: 4px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -143,3 +197,132 @@ img {
     margin: 0 !important;
 }
 
+/* Caixa principal do chefe */
+.boss-card {
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #2d2d34;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+/* Cortina escura interna para garantir a leitura do texto */
+.boss-overlay {
+    background: linear-gradient(to right, rgba(12, 12, 14, 0.95) 50%, rgba(12, 12, 14, 0.4) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    gap: 40px;
+}
+
+/* Alinhamento dos textos na esquerda */
+.boss-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.boss-info h3 {
+    font-size: 2rem;
+    color: #ff3333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: none;
+}
+
+.boss-bloco {
+    margin-bottom: 20px;
+}
+
+.boss-bloco h4 {
+    color: #8b0000; 
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+    font-family: 'Georgia', serif;
+}
+
+.boss-bloco p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cbcbd7;
+    text-align: justify;
+}
+
+/* Alinhamento da Imagem na direita */
+.boss-imagem {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Define uma largura máxima fixa para a área da imagem */
+    height: 100%;
+}
+
+/* Estilo do boneco em PNG */
+.png-boss {
+    width: auto;
+    height: 300px;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8)); /* Sombra no contorno do boneco */
+    margin: 0 !important;
+    border: none !important;
+}
+/* FORÇA TODOS OS PERSONAGENS EM PNG A TEREM A MESMA ALTURA */
+.boss-imagem img {
+    height: 300px !important;             /* Define a altura idêntica para todos os monstros */
+    width: 250px !important;               /* Deixa a largura se ajustar sozinha para a foto não amassar */
+    object-fit: contain;       /* Garante que o desenho caiba perfeitamente no espaço */
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8)); /* Sombra bonita no contorno do PNG */
+    border: none !important;    /* Garante que nenhuma foto ganhe aquela moldura cinza */
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 500%;
+    max-height: 550px;
+}
+/*Besta Clerical*/
+.card-arena-clerical {
+    background-image: url(./imagens/bannerbeast.jpeg); 
+}
+/*Padre Gascoigne*/
+
+.card-arena-gascoigne {
+    background-image: url(./imagens/bannergascoigne.jpg); 
+}
+/*Vigária Amelia*/
+.card-arena-amelia {
+    background-image: url(./imagens/banneramelia.jpg); 
+}
+/*Sombras*/
+.card-arena-sombras {
+    background-image: url(./imagens/bannershadows.jpg);
+}
+/*Rom*/
+.card-arena-rom {
+    background-image: url(./imagens/bannerrom.png);
+}
+/*Renascido*/
+.card-arena-renascido {
+    background-image: url(./imagens/bannerrenascido.png);
+}
+/*Amygdala*/
+.card-arena-amygdala {
+    background-image: url(./imagens/banneramygdala.jpg)
+}
+/*Micolash*/
+.card-arena-micolash {
+    background-image: url(./imagens/bannermicolash.png);
+}
+/*Mergo*/
+.card-arena-mergo {
+    background-image: url(./imagens/bannermergo.png);
+}
+/* Gehrman, o Primeiro Caçador */
+.card-arena-gehrman {
+    background-image: url(./imagens/bannergehrman.jpg);
+}
+/* Presença da Lua */
+.card-arena-moon {
+    background-image: url(./imagens/bannermoon.png);
+}
