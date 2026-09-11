@@ -1,46 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central Bloodborne | Guia de Caçador</title>
+<!DOCTYPE html> <!-- Tipo do documento: HTML5 -->
+<html lang="pt-BR"> <!-- Idioma do site: Português -->
+<head> <!-- Configurações internas do site -->
+    <meta charset="UTF-8"> <!-- Suporte para acentos e símbolos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptação para celular e PC -->
+    <title>Central Bloodborne | Guia de Caçador</title> <!-- Título da aba do navegador -->
+    
+    <!-- Conexão com o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Resumo do site para o Google -->
     <meta name="description" content="Guia completo de Bloodborne: lore dos chefes, builds de armas, segredos de Yharnam e cálices do labirinto.">
-<!--Codagem para o link ficar bem apresentável no compartilhamento-->
-    <meta property="og:title" content="Central Bloodborne - Guias, Lore e Dicas">
-    <meta property="og:description" content="Explore os segredos da caçada. Detonados de chefes, atributos de armas e a história completa de Yharnam.">
-    <meta property="og:image" content="./imagens/capa.jpg">
+    
+    <!-- Visual do link ao compartilhar (Redes Sociais) -->
+    <meta property="og:title" content="Central Bloodborne - Guias, Lore e Dicas"> <!-- Título no compartilhamento -->
+    <meta property="og:description" content="Explore os segredos da caçada. Detonados de chefes, atributos de armas e a história completa de Yharnam."> <!-- Descrição no compartilhamento -->
+    <meta property="og:image" content="./imagens/capa.jpg"> <!-- Imagem no compartilhamento -->
 </head>
-<body>
-<!--Hero Banner-->
+
+    <!-- Corpo do site (conteúdo visível) -->
+<body> 
+    <!-- Banner principal com imagem de fundo -->
     <div class="hero-banner">
-    <div class="hero-overlay">
-<!--Topo do site-->
-    <header>
-        <h1>Central Bloodborne</h1>
-            <p><em style="color: #f1f5f9;">"Anule a praga dos homens. Que a caçada comece."</em></p>
-<!--Menu de Navegação estilizado-->
-      <nav class="barra-navegacao">
-        <a href="#introducao">A Caçada</a>
-        <a href="#historia">História</a>
-        <a href="#armas">Armas</a>
-        <a href="#chefes">Chefes</a>
-      </nav>
-    </header>
-<!--Seção de Introdução no banner-->
-    <section id="introducao">
-        <h2>A Cidade de Yharnam</h2>
-        <div class="introducao-texto">
-            <p>Você acorda na maca de uma clínica misteriosa. Seu sangue foi contaminado e agora você está preso ao <strong>Sonho do Caçador</strong>. Seu objetivo é explorar as ruas de uma cidade gótica amaldiçoada e sobreviver à noite mais longa da sua vida.</p>
-        </div>
-    </section> 
-    </div> 
-    </div> 
+        <div class="hero-overlay"> <!-- Camada escura por cima da imagem -->
+
+            <!-- Topo do site -->
+            <header>
+                <h1>Central Bloodborne</h1> <!-- Título principal do site -->
+                <p><em style="color: #f1f5f9;">"Anule a praga dos homens. Que a caçada comece."</em></p> <!-- Frase em itálico e cor clara -->
+                
+                <!-- Menu de navegação -->
+                <nav class="barra-navegacao">
+                    <a href="#introducao">A Caçada</a> <!-- Link para a introdução -->
+                    <a href="#historia">História</a> <!-- Link para a história -->
+                    <a href="#armas">Armas</a> <!-- Link para as armas -->
+                    <a href="#chefes">Chefes</a> <!-- Link para os chefes -->
+                </nav>
+            </header>
+
+            <!-- Seção de introdução -->
+            <section id="introducao">
+                <h2>A Cidade de Yharnam</h2> <!-- Título da seção -->
+                <div class="introducao-texto"> <!-- Bloco de texto da introdução -->
+                    <p>Você acorda na maca de uma clínica misteriosa. Seu sangue foi contaminado e agora você está preso ao <strong>Sonho do Caçador</strong>. Seu objetivo é explorar as ruas de uma cidade gótica amaldiçoada e sobreviver à noite mais longa da sua vida.</p> <!-- Texto com destaque em negrito -->
+                </div>
+            </section> 
+
+        </div> <!-- Fecha a camada escura -->
+    </div> <!-- Fecha o banner principal -->
+
+    <!-- Conteúdo principal do site -->
 
     <main>
     <!--Vídeo Complementar-->
     <section id="video-introducao" style="margin: 40px auto; max-width: 800px; text-align: center;">
-        <figure style="margin: 0; padding: 0;">
+        <figure style="margin: 0; padding: 0;"> <!-- Bloco para organizar a mídia -->
+            
+            <!-- Janela para o vídeo do YouTube -->
             <iframe width="100%" height="450" 
                 src="https://www.youtube.com/embed/G203e1HhixY?si=9n-iTNk0kN2YseXo"
                 title="Bloodborne Trailer" 
@@ -49,328 +64,392 @@
                 allowfullscreen
                 style="border-radius: 8px; border: 1px solid #2d2d34; box-shadow: 0 8px 20px rgba(0,0,0,0.6);">
             </iframe>
-           <figcaption style="margin-top: 12px; font-size: 0.95rem; color: #a8a8b3; font-style: italic;">
-            Assista ao trailer oficial de lançamento de Bloodborne e sinta a atmosfera sombria de Yharnam.
-           </figcaption>
+            
+            <!-- Legenda do vídeo -->
+            <figcaption style="margin-top: 12px; font-size: 0.95rem; color: #a8a8b3; font-style: italic;">
+                Assista ao trailer oficial de lançamento de Bloodborne e sinta a atmosfera sombria de Yharnam.
+            </figcaption>
         </figure>
     </section>
-<!--História-->
+
+    <!-- Seção completa da História/Lore -->
     <section id="historia">
         <h2>Os Mistérios da Lore: O Sangue Antigo</h2>
-          <p>A história de Bloodborne não é contada de forma direta. Ela está escondida nas descrições de itens, cenários e diálogos enigmáticos. Para entender a queda de Yharnam, precisamos olhar para o passado.</p>
-        <h3>A Igreja da Cura e o Sangue Milagroso</h3>
-          <p>Tudo começou quando eruditos da instituição de ensino <strong>Byrgenwerth</strong> descobriram um sangue antigo e misterioso nas profundezas das tumbas subterrâneas (os Cálices). Esse sangue tinha o poder de curar qualquer doença.</p>
-          <p>Um homem chamado <em>Laurence</em> traiu seu mestre e fundou a <strong>Igreja da Cura</strong>, espalhando o consumo desse sangue por toda Yharnam. O que eles não sabiam é que o uso excessivo desse elemento cobraria um preço terrível.</p>
-        <h3>A Praga das Feras</h3>
-          <p>O sangue milagroso corrompeu o corpo dos cidadãos. Gradualmente, aqueles que consumiram o sangue começaram a se transformar em monstros peludos, garras afiadas e criaturas gigantescas. Ironicamente, os membros de alto escalão da própria Igreja se tornaram as piores feras de todas.</p>
-        <h3>Os Grandes (Great Ones)</h3>
-          <p>Por trás de toda a praga e do sangue, existem entidades cósmicas divinas conhecidas como os <strong>Grandes</strong>. Eles operam em dimensões além da compreensão humana. O Sonho do Caçador no qual você está preso é, na verdade, a criação de uma dessas entidades: a <em>Presença da Lua</em>.</p>
-        <h3>O Sonho do Caçador e a Oficina Inicial</h3>
-          <p>Quando as feras começaram a dominar as ruas, a Igreja da Cura percebeu que precisava de guerreiros especializados para conter o caos secretamente. Foi então que surgiu a primeira geração de caçadores, liderados por <strong>Gehrman, o Primeiro Caçador</strong>.</p>
-          <p>Gehrman criou técnicas de combate ágeis e armas transformáveis (como as que você escolhe no início). No entanto, o avanço da praga foi implacável, e a antiga oficina acabou sendo abandonada após tragédias terríveis provocadas pelo consumo do sangue corrompido.</p>
-        <h3>O Pacto e a Boneca Animada</h3>
-          <p>Desesperado e isolado em uma cadeira de rodas, Gehrman fez um pacto com uma entidade cósmica: a <em>Presença da Lua</em>. Essa criatura criou uma dimensão alternativa chamada <strong>Sonho do Caçador</strong>, uma espécie de santuário que serve de refúgio para caçadores escolhidos como você.</p>
-          <p>Nesse sonho, Gehrman atua como um guia misterioso e preso ao local. Ao seu lado, há uma <strong>Boneca de porcelana</strong> em tamanho real que ganhou vida. Ela é o único porto seguro do jogador, demonstrando empatia genuína e canalizando os ecos de sangue que você coleta para fortalecer seus atributos.</p>
-        <h3>A Caçada Sem Fim</h3>
-          <p>Toda vez que você morre nas ruas góticas de Yharnam, você não desaparece; sua consciência simplesmente acorda de volta no Sonho. Você se tornou um caçador imortal, amarrado a este ciclo até que consiga cumprir o seu contrato: desvendar a origem do pesadelo e pôr fim à noite da caçada.</p>
-        <h3>O Fim da Noite: Os Três Destinos</h3>
-          <p>Conforme o amanhecer se aproxima, a caçada chega ao seu fim e o jogador se depara com uma escolha crucial oferecida por <strong>Gehrman</strong> sob a grande árvore do Sonho.</p>
-          <p>Dependendo das suas ações e dos segredos que você descobriu em Yharnam, a história pode terminar de três formas: você pode <strong>aceitar a libertação</strong> e acordar no mundo real esquecendo o pesadelo, <strong>substituir Gehrman</strong> tornando-se o novo prisioneiro do Sonho, ou <strong>transcender a humanidade</strong>, derrotando a própria Presença da Lua para se transformar no próximo Grande.</p>
-    </section>
-<!--Armas Principais-->
+    <p class="historia-intro">A história de Bloodborne não é contada de forma direta. Ela está escondida nas descrições de itens, cenários e diálogos enigmáticos. Para entender a queda de Yharnam, precisamos olhar para o passado.</p>
+
+    <!-- Bloco 1: Texto na Esquerda, Imagem na Direita -->
+    <div class="lore-row">
+        <div class="lore-text">
+            <h3>A Igreja da Cura e o Sangue Milagroso</h3>
+            <p>Tudo começou quando eruditos de <strong>Byrgenwerth</strong> descobriram um sangue antigo nas tumbas subterrâneas capaz de curar qualquer doença. Um homem chamado <em>Laurence</em> traiu seu mestre e fundou a <strong>Igreja da Cura</strong>, espalhando o consumo desse sangue por toda Yharnam, sem saber o preço terrível que cobraria.</p>
+        </div>
+        <div class="lore-image">
+            <img src="./imagens/laurence.webp" alt="Igreja da Cura">
+        </div>
+    </div>
+
+    <!-- Bloco 2: Imagem na Esquerda, Texto na Direita -->
+    <div class="lore-row lore-reverse">
+        <div class="lore-text">
+            <h3>A Praga das Feras</h3>
+            <p>O sangue milagroso corrompeu os cidadãos. Gradualmente, aqueles que o consumiram começaram a se transformar em monstros peludos e criaturas gigantescas. Ironicamente, os membros de alto escalão da própria Igreja se tornaram as piores e mais grotescas feras de todas.</p>
+        </div>
+        <div class="lore-image">
+            <img src="./imagens/praga.webp" alt="Praga das Feras">
+        </div>
+    </div>
+
+    <!-- Bloco 3: Texto na Esquerda, Imagem na Direita -->
+    <div class="lore-row">
+        <div class="lore-text">
+            <h3>Os Grandes (Great Ones)</h3>
+            <p>Por trás da praga, existem entidades cósmicas divinas conhecidas como os <strong>Grandes</strong>, que operam além da compreensão humana. O Sonho do Caçador no qual você está preso é, na verdade, a criação de uma dessas entidades: a misteriosa <em>Presença da Lua</em>.</p>
+        </div>
+        <div class="lore-image">
+            <img src="./imagens/osgrandes.jpeg" alt="Os Grandes">
+        </div>
+    </div>
+    </section> <!-- Fecha a seção da história -->
+    
+    <!-- Seção de Armas Iniciais -->
     <section id="armas">
-        <h2>Escolha sua Arma Inicial</h2>
-          <p>No início do jogo, ao visitar o Sonho do Caçador pela primeira vez, você receberá o direito de escolher uma das três armas de truque criadas pela Oficina. Cada uma dita um estilo de jogo diferente:</p>
-        <ul>
-            <li>
-                <p><strong>Cutelo-Serra (Saw Cleaver):</strong> A arma mais icônica do jogo. Ela é equilibrada, rápida e causa dano extra do tipo <em>Serrilhado</em>, que destrói feras comuns muito mais rápido. É a escolha ideal para iniciantes.</p>
-                <img src="imagens/cutelo.webp" alt="Cutelo-Serra de Bloodborne" width="400">
-            </li>
-            <li>
-                <p><strong>Machado de Caçador (Hunter Axe):</strong> Focado em força e controle de grupo. Quando transformado, ele se torna uma alabarda longa capaz de derrubar vários inimigos de uma vez com o seu famoso ataque carregado giratório.</p>
-                <img src="imagens/machado.webp" alt="Machado de Caçador de Bloodborne" width="400">
-            </li>
-            <li>
-                <p><strong>Bengala-Chicote (Threaded Cane):</strong> A opção mais elegante e ágil. No modo normal, funciona como uma espada rápida; no modo transformado, vira um chicote segmentado com longo alcance, ideal para caçadores focados em destreza.</p>
-                <img src="imagens/bengala.webp" alt="Bengala de Bloodborne" width="400">
-            </li>
-        </ul>
-    </section>
-<!--Principais Chefes-->
-    <section id="chefes">
-        <h2>Os Grandes Desafios da Caçada</h2>
+        <h2>Escolha sua Arma Inicial</h2> <!-- Título da seção -->
+        <p>No início do jogo, ao visitar o Sonho do Caçador pela primeira vez, você receberá o direito de escolher uma das três armas de truque criadas pela Oficina. Cada uma dita um estilo de jogo diferente:</p>
         
-        <!-- CORREÇÃO AQUI: O parágrafo agora fecha corretamente com </p> no final -->
+        <ul> <!-- Lista com as três armas -->
+            
+            <li> <!-- Opção 1: Cutelo-Serra -->
+                <p><strong>Cutelo-Serra (Saw Cleaver):</strong> A arma mais icônica do jogo. Ela é equilibrada, rápida e causa dano extra do tipo <em>Serrilhado</em>, que destrói feras comuns muito mais rápido. É a escolha ideal para iniciantes. Também é possível aumentar seu alcance, utilizando seu modo aberto.</p>
+                <img src="./imagens/cutelo.png" alt="Cutelo-Serra de Bloodborne" width="400"> <!-- Imagem do Cutelo -->
+            </li>
+            
+            <li> <!-- Opção 2: Machado -->
+                <p><strong>Machado de Caçador (Hunter Axe):</strong> Focado em força e controle de grupo. Quando transformado, ele se torna uma alabarda longa capaz de derrubar vários inimigos de uma vez com o seu famoso ataque carregado giratório. Claramente uma cópia descarada do machado de Gascoigne.</p>
+                <img src="./imagens/machado.png" alt="Machado de Caçador de Bloodborne" width="400"> <!-- Imagem do Machado -->
+            </li>
+            
+            <li> <!-- Opção 3: Bengala -->
+                <p><strong>Bengala-Chicote (Threaded Cane):</strong> A opção mais elegante e ágil. No modo normal, funciona como uma espada rápida; no modo transformado, vira um chicote segmentado com longo alcance, ideal para caçadores focados em destreza (ninguém usa essa bosta).</p>
+                <img src="./imagens/bengala.png" alt="Bengala de Bloodborne" width="400"> <!-- Imagem da Bengala -->
+            </li>
+            
+            <li> <!-- Opção 1: Pistola -->
+                <p><strong>Pistola de Caçador (Hunter Pistol):</strong> Focada em velocidade e precisão. Possui um disparo muito rápido e menor tempo de recuperação, sendo a escolha perfeita para caçadores com reflexos rápidos que buscam dominar o tempo do contra-ataque (parry) à distância.</p>
+                <img src="./imagens/pistola.webp" alt="Pistola de Caçador de Bloodborne" width="400"> <!-- Imagem da Pistola -->
+            </li>
+
+            <li> <!-- Opção 2: Bacamarte -->
+                <p><strong>Bacamarte de Caçador (Hunter Blunderbuss):</strong> Focado em impacto e segurança. Dispara uma dispersão de projéteis em cone que espalha o dano, tornando quase impossível errar o alvo de perto e garantindo o atordoamento dos inimigos mesmo se você errar o tempo exato do parry.</p>
+                <img src="./imagens/bacamarte.png" alt="Bacamarte de Caçador de Bloodborne" width="400"> <!-- Imagem do Bacamarte -->
+            </li>
+
+        </ul> <!-- Fecha a lista de armas -->
+    </section> <!-- Fecha a seção de armas -->
+
+    <!-- Seção de Chefes -->
+    <section id="chefes">
+        <h2>Os Grandes Desafios da Caçada</h2> <!-- Título principal da seção -->
+        
         <p>Para libertar Yharnam do pesadelo, você deve derrotar as maiores abominações da Igreja da Cura e as divindades cósmicas que regem este mundo:</p>
                
-        <!-- CARD DA FERA CLERICAL -->
+     <!-- Card do chefe: Fera Clerical -->
         <div class="boss-card card-arena-clerical">
-            <div class="boss-overlay">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
                 
-                <!-- Coluna da Esquerda: Informações -->
+                <!-- Informações do chefe (lado esquerdo) -->
                 <div class="boss-info">
-                    <h3>Fera Clerical</h3>
+                    <h3>Fera Clerical</h3> <!-- Nome do chefe -->
                     
-                    <div class="boss-bloco">
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
                         <h4>Lore (História)</h4>
                         <p>Um monstro gigantesco e berrante que bloqueia a Grande Ponte. A lore revela que os clérigos da Igreja da Cura frequentemente se transformavam nas feras mais grotescas e violentas devido ao consumo massivo do sangue antigo.</p>
                     </div>
 
-                    <div class="boss-bloco">
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
                         <h4>Fraquezas e Estratégia</h4>
                         <p>Feras têm pavor profundo de <strong>Fogo</strong>. Foque seus ataques na cabeça para abrir espaço para um ataque visceral. Usar Coquetéis Molotov e Papel de Fogo na arma derrete a vida deste chefe rapidamente.</p>
                     </div>
                 </div>
 
-                <!-- Coluna da Direita: PNG Transparente -->
+                <!-- Imagem do chefe (lado direito) -->
                 <div class="boss-imagem">
-                    <img src="./imagens/beast.png" alt="Fera Clerical PNG" class="png-boss">
+                    <img src="./imagens/beast.png" alt="Fera Clerical PNG" class="png-boss"> <!-- Imagem recortada do chefe -->
                 </div>
-            </div>
-        </div>
-            <!-- CARD 2: PADRE GASCOIGNE -->
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card do chefe -->
+
+     <!-- Card do chefe: Padre Gascoigne -->
         <div class="boss-card card-arena-gascoigne">
-            <div class="boss-overlay">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
             
+                <!-- Informações do chefe (lado esquerdo) -->
                 <div class="boss-info">
-                    <h3>Padre Gascoigne</h3>
+                    <h3>Padre Gascoigne</h3> <!-- Nome do chefe -->
                 
-                    <div class="boss-bloco">
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
                         <h4>Lore (História)</h4>
                         <p>Um caçador veterano estrangeiro que serviu à Igreja da Cura. Completamente consumido pelo cheiro do sangue e pela loucura da caçada, ele esqueceu de sua própria família e ataca ferozmente qualquer um que pise no cemitério.</p>
                     </div>
 
-                        <div class="boss-bloco">
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
                         <h4>Fraquezas e Estratégia</h4>
                         <p>Na forma humana, ele é altamente vulnerável a contra-ataques com a pistola (<strong>Parry</strong>). Na forma de fera, ele se torna extremamente agressivo, mas fica frágil a <strong>Fogo</strong>. Use a Caixinha de Música para atordoá-lo temporariamente.</p>
                     </div>
                 </div>
 
+                <!-- Imagem do chefe (lado direito) -->
                 <div class="boss-imagem">
-                <img src="./imagens/gascoigne.png" alt="Padre Gascoigne PNG" class="png-boss-gascoigne">
+                    <img src="./imagens/gascoigne.png" alt="Padre Gascoigne PNG" class="png-boss-gascoigne"> <!-- Imagem recortada do chefe -->
                 </div>
 
-            </div>
-        </div>
-            <!-- CARD 3: VIGÁRIA AMELIA -->
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card do chefe -->
+
+     <!-- Card da chefe: Vigária Amelia -->
         <div class="boss-card card-arena-amelia">
-            <div class="boss-overlay">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
             
+                <!-- Informações da chefe (lado esquerdo) -->
                 <div class="boss-info">
-                    <h3>Vigária Amelia</h3>
+                    <h3>Vigária Amelia</h3> <!-- Nome da chefe -->
                 
-                    <div class="boss-bloco">
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
                         <h4>Lore (História)</h4>
                         <p>A última líder da Igreja da Cura. Ela se ajoelha diante do altar segurando um antigo medalhão dourado enquanto reza fervorosamente, até que a infecção do sangue a consome por completo em frente ao jogador, transformando-a em uma fera peluda colossal.</p>
                     </div>
 
-                    <div class="boss-bloco">
-                    <h4>Fraquezas e Estratégia</h4>
-                    <p>Amelia tenta se curar constantemente durante a batalha; use <strong>Névoa Entorpecente</strong> para bloquear sua regeneração. Ela é extremamente vulnerável a dano do tipo <strong>Serrilhado</strong> (como o seu Cutelo-Serra) e a <strong>Fogo</strong>.</p>
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>Amelia tenta se curar constantemente durante a batalha; use <strong>Névoa Entorpecente</strong> para bloquear sua regeneração. Ela é extremamente vulnerável a dano do tipo <strong>Serrilhado</strong> (como o seu Cutelo-Serra) e a <strong>Fogo</strong>.</p>
                     </div>
                 </div>
 
+                <!-- Imagem da chefe (lado direito) -->
                 <div class="boss-imagem">
-                    <img src="./imagens/amelia.png" alt="Vigária Amelia PNG" class="png-boss-amelia">
+                    <img src="./imagens/amelia.png" alt="Vigária Amelia PNG" class="png-boss-amelia"> <!-- Imagem recortada da chefe -->
                 </div>
 
-            </div>
-        </div>
-            <!-- CARD 4: SOMBRAS DE YHARNAM -->
-    <div class="boss-card card-arena-sombras">
-        <div class="boss-overlay">
-            
-            <div class="boss-info">
-                <h3>Sombras de Yharnam</h3>
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card da chefe -->
+
+     <!-- Card dos chefes: Sombras de Yharnam -->
+        <div class="boss-card card-arena-sombras">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
                 
-                <div class="boss-bloco">
-                    <h4>Lore (História)</h4>
-                    <p>Servos antigos e remanescentes da Rainha Yharnam de Pthumeru. Vestidos com túnicas escuras e capuzes lúgubres, esses carrascos sem rosto foram corrompidos pela Igreja da Cura e agora guardam os caminhos mais profundos dos Bosques Proibidos, impedindo que qualquer caçador chegue à universidade de Byrgenwerth.</p>
+                <!-- Informações dos chefes (lado esquerdo) -->
+                <div class="boss-info">
+                    <h3>Sombras de Yharnam</h3> <!-- Nome dos chefes -->
+                    
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
+                        <h4>Lore (História)</h4>
+                        <p>Servos antigos e remanescentes da Rainha Yharnam de Pthumeru. Vestidos com túnicas escuras e capuzes lúgubres, esses carrascos sem rosto foram corrompidos pela Igreja da Cura e agora guardam os caminhos mais profundos dos Bosques Proibidos, impedindo que qualquer caçador chegue à universidade de Byrgenwerth.</p>
+                    </div>
+
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>A batalha é contra três inimigos ao mesmo tempo: um espadachim agressivo, um guerreiro com katana/vela de fogo e um mago de longo alcance. Foque primeiro no espadachim comum usando a lápide gigante no centro da arena para se proteger das bolas de fogo. Elas são vulneráveis a dano do tipo <strong>Raio (Bolt)</strong> e a ataques viscerais (<strong>Parry</strong>).</p>
+                    </div>
                 </div>
 
-                <div class="boss-bloco">
-                    <h4>Fraquezas e Estratégia</h4>
-                    <p>A batalha é contra três inimigos ao mesmo tempo: um espadachim agressivo, um guerreiro com katana/vela de fogo e um mago de longo alcance. Foque primeiro no espadachim comum usando a lápide gigante no centro da arena para se proteger das bolas de fogo. Elas são vulneráveis a dano do tipo <strong>Raio (Bolt)</strong> e a ataques viscerais (<strong>Parry</strong>).</p>
+                <!-- Imagem dos chefes (lado direito) -->
+                <div class="boss-imagem">
+                    <img src="./imagens/shadows.png" alt="Sombras de Yharnam PNG" class="png-boss-shadow"> <!-- Imagem recortada dos chefes -->
                 </div>
-            </div>
 
-            <div class="boss-imagem">
-                <img src="./imagens/shadows.png" alt="Sombras de Yharnam PNG" class="png-boss-shadow">
-            </div>
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card dos chefes -->
 
-        </div>
-    </div>
-    <!-- CARD 5: ROM, A ARANHA VAZIA -->
-    <div class="boss-card card-arena-rom">
-        <div class="boss-overlay">
-            
-            <div class="boss-info">
-                <h3>Rom, a Aranha Vazia</h3>
+     <!-- Card da chefe: Rom, a Aranha Vazia -->
+        <div class="boss-card card-arena-rom">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
                 
-                <div class="boss-bloco">
-                    <h4>Lore (História)</h4>
-                    <p>Antigamente uma erudita humana da universidade de Byrgenwerth, Rom foi agraciada com "olhos em seu cérebro" por Kos, transcendendo em um Grande artificial. Ela atua como um selo místico no fundo do Lago de Oedon, escondendo os rituais sombrios da Igreja da Cura e a terrível Lua de Sangue dos olhos dos homens.</p>
+                <!-- Informações da chefe (lado esquerdo) -->
+                <div class="boss-info">
+                    <h3>Rom, a Aranha Vazia</h3> <!-- Nome da chefe -->
+                    
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
+                        <h4>Lore (História)</h4>
+                        <p>Antigamente uma erudita humana da universidade de Byrgenwerth, Rom foi agraciada com "olhos em seu cérebro" por Kos, transcendendo em um Grande artificial. Ela atua como um selo místico no fundo do Lago de Oedon, escondendo os rituais sombrios da Igreja da Cura e a terrível Lua de Sangue dos olhos dos homens.</p>
+                    </div>
+
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>Rom não ataca na primeira fase, mas evoca dezenas de filhotes com cabeças de pedra blindadas. Ataque Rom e seus filhotes sempre pelas <strong>laterais ou por trás</strong>, onde o corpo é macio. Ela é extremamente vulnerável a dano de <strong>Raio (Bolt)</strong>. Na segunda fase, esquive-se correndo de lado para desviar dos meteoros azuis.</p>
+                    </div>
                 </div>
 
-                <div class="boss-bloco">
-                    <h4>Fraquezas e Estratégia</h4>
-                    <p>Rom não ataca na primeira fase, mas evoca dezenas de filhotes com cabeças de pedra blindadas. Ataque Rom e seus filhotes sempre pelas <strong>laterais ou por trás</strong>, onde o corpo é macio. Ela é extremamente vulnerável a dano de <strong>Raio (Bolt)</strong>. Na segunda fase, esquive-se correndo de lado para desviar dos meteoros azuis.</p>
+                <!-- Imagem da chefe (lado direito) -->
+                <div class="boss-imagem">
+                    <img src="./imagens/rom.png" alt="Rom PNG" class="png-boss-rom"> <!-- Imagem recortada da chefe -->
                 </div>
-            </div>
 
-            <div class="boss-imagem">
-                <img src="./imagens/rom.png" alt="Rom PNG" class="png-boss-rom">
-            </div>
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card da chefe -->
 
-        </div>
-    </div>
-     <!-- CARD 6: O RENASCIDO -->
-    <div class="boss-card card-arena-renascido">
-        <div class="boss-overlay">
-            
-            <div class="boss-info">
-                <h3>O Renascido</h3>
+     <!-- Card do chefe: O Renascido -->
+        <div class="boss-card card-arena-renascido">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
                 
-                <div class="boss-bloco">
-                    <h4>Lore (História)</h4>
-                    <p>Uma massa colossal composta por centenas de corpos humanos fundidos, evocada através de um ritual profano feito pela Escola de Mensis na Vila Invisível. O Renascido é uma tentativa desesperada e artificial de criar um Grande de carne e osso, nascido diretamente do cosmo a partir do sacrifício de toda a população de Yahar'gul.</p>
+                <!-- Informações do chefe (lado esquerdo) -->
+                <div class="boss-info">
+                    <h3>O Renascido</h3> <!-- Nome do chefe -->
+                    
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
+                        <h4>Lore (História)</h4>
+                        <p>Uma massa colossal composta por centenas de corpos humanos fundidos, evocada através de um ritual profano feito pela Escola de Mensis na Vila Invisível. O Renascido é uma tentativa desesperada e artificial de criar um Grande de carne e osso, nascido diretamente do cosmo a partir do sacrifício de toda a população de Yahar'gul.</p>
+                    </div>
+
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>Assim que a luta começar, suba as escadas nas laterais da arena e **elimine os seis feiticeiros** que ficam jogando bolas de fogo de cima. Lá embaixo, ataque os membros moles nas laterais do monstro. Ele é extremamente vulnerável a dano de <strong>Fogo</strong> e a armas com dano <strong>Contundente (Blunt)</strong>.</p>
+                    </div>
                 </div>
 
-                <div class="boss-bloco">
-                    <h4>Fraquezas e Estratégia</h4>
-                    <p>Assim que a luta começar, suba as escadas nas laterais da arena e **elimine os seis feiticeiros** que ficam jogando bolas de fogo de cima. Lá embaixo, ataque os membros moles nas laterais do monstro. Ele é extremamente vulnerável a dano de <strong>Fogo</strong> e a armas com dano <strong>Contundente (Blunt)</strong>.</p>
+                <!-- Imagem do chefe (lado direito) -->
+                <div class="boss-imagem">
+                    <img src="./imagens/renascido.png" alt="O Renascido PNG" class="png-boss-renascido"> <!-- Imagem recortada do chefe -->
                 </div>
-            </div>
 
-            <div class="boss-imagem">
-                <img src="./imagens/renascido.png" alt="O Renascido PNG" class="png-boss-renascido">
-            </div>
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card do chefe -->
 
-        </div>
-    </div>
-    <!-- CARD 7: AMYGDALA -->
-    <div class="boss-card card-arena-amygdala">
-        <div class="boss-overlay">
-            
-            <div class="boss-info">
-                <h3>Amygdala</h3>
+     <!-- Card da chefe: Amygdala -->
+        <div class="boss-card card-arena-amygdala">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
                 
-                <div class="boss-bloco">
-                    <h4>Lore (História)</h4>
-                    <p>Um dos Grandes nativos do plano espiritual. Diferente de outras divindades cósmicas que operam nas sombras, as Amygdalas estão presentes em massa, agarradas invisivelmente aos tetos das grandes capelas de Yharnam. Elas observam e guardam os portais que conectam o mundo real aos piores pesadelos da história.</p>
+                <!-- Informações da chefe (lado esquerdo) -->
+                <div class="boss-info">
+                    <h3>Amygdala</h3> <!-- Nome da chefe -->
+                    
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
+                        <h4>Lore (História)</h4>
+                        <p>Um dos Grandes nativos do plano espiritual. Diferente de outras divindades cósmicas que operam nas sombras, as Amygdalas estão presentes em massa, agarradas invisivelmente aos tetos das grandes capelas de Yharnam. Elas observam e guardam os portais que conectam o mundo real aos piores pesadelos da história.</p>
+                    </div>
+
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>O corpo e as pernas da Amygdala são blindados e causam pouquíssimo dano. Foque todos os seus ataques nos **braços e na cabeça**, que são os pontos fracos. Ela é vulnerável a dano do tipo **Raio (Bolt)** e **Fogo**. Na fase final, quando ela arrancar os próprios braços para ganhar alcance, fique embaixo dela e espere ela pular para atacar a cabeça.</p>
+                    </div>
                 </div>
 
-                <div class="boss-bloco">
-                    <h4>Fraquezas e Estratégia</h4>
-                    <p>O corpo e as pernas da Amygdala são blindados e causam pouquíssimo dano. Foque todos os seus ataques nos **braços e na cabeça**, que são os pontos fracos. Ela é vulnerável a dano do tipo **Raio (Bolt)** e **Fogo**. Na fase final, quando ela arrancar os próprios braços para ganhar alcance, fique embaixo dela e espere ela pular para atacar a cabeça.</p>
+                <!-- Imagem da chefe (lado direito) -->
+                <div class="boss-imagem">
+                    <img src="./imagens/amygdala.png" alt="Amygdala PNG" class="png-boss-amygdala"> <!-- Imagem recortada da chefe -->
                 </div>
-            </div>
 
-            <div class="boss-imagem">
-                <img src="./imagens/amygdala.png" alt="Amygdala PNG" class="png-boss-amygdala">
-            </div>
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card da chefe -->
 
-        </div>
-    </div>
-     <!-- CARD 8: MICOLASH, ANFITRIÃO DO PESADELO -->
-    <div class="boss-card card-arena-micolash">
-        <div class="boss-overlay">
-            
-            <div class="boss-info">
-                <h3>Micolash, Anfitrião do Pesadelo</h3>
+     <!-- Card do chefe: Micolash, Anfitrião do Pesadelo -->
+        <div class="boss-card card-arena-micolash">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
                 
-                <div class="boss-bloco">
-                    <h4>Lore (História)</h4>
-                    <p>O líder insano da Escola de Mensis. Micolash conduziu o terrível ritual em Yahar'gul que resultou no sacrifício de inúmeras vidas para fazer contato com os Grandes. Embora seu corpo físico esteja morto e mumificado no mundo real, sua consciência governa e habita o Pesadelo de Mensis, onde ele corre eternamente pelos corredores rindo da própria loucura.</p>
+                <!-- Informações do chefe (lado esquerdo) -->
+                <div class="boss-info">
+                    <h3>Micolash, Anfitrião do Pesadelo</h3> <!-- Nome do chefe -->
+                    
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
+                        <h4>Lore (História)</h4>
+                        <p>O líder insano da Escola de Mensis. Micolash conduziu o terrível ritual em Yahar'gul que resultou no sacrifício de inúmeras vidas para fazer contato com os Grandes. Embora seu corpo físico esteja morto e mumificado no mundo real, sua consciência governa e habita o Pesadelo de Mensis, onde ele corre eternamente pelos corredores rindo da própria loucura.</p>
+                    </div>
+
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>Esta luta é uma perseguição em um labirinto. Persiga-o até encurralá-lo em duas salas fechadas. Na primeira fase, esquive-se para os lados para desviar de seus tentáculos (<strong>Augúrio de Ebrietas</strong>). Na segunda fase, interrompa-o com ataques rápidos ou tiros antes que ele conjure o feitiço de meteoros mágicos (<strong>Um Chamado Além</strong>), que causa dano massivo.</p>
+                    </div>
                 </div>
 
-                <div class="boss-bloco">
-                    <h4>Fraquezas e Estratégia</h4>
-                    <p>Esta luta é uma perseguição em um labirinto. Persiga-o até encurralá-lo em duas salas fechadas. Na primeira fase, esquive-se para os lados para desviar de seus tentáculos (<strong>Augúrio de Ebrietas</strong>). Na segunda fase, interrompa-o com ataques rápidos ou tiros antes que ele conjure o feitiço de meteoros mágicos (<strong>Um Chamado Além</strong>), que causa dano massivo.</p>
+                <!-- Imagem do chefe (lado direito) -->
+                <div class="boss-imagem">
+                    <img src="./imagens/micolash.png" alt="Micolash PNG" class="png-boss-micolash"> <!-- Imagem recortada do chefe -->
                 </div>
-            </div>
 
-            <div class="boss-imagem">
-                <img src="./imagens/micolash.png" alt="Micolash PNG" class="png-boss-micolash">
-            </div>
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card do chefe -->
 
-        </div>
-    </div>
-    <!-- CARD 9: AMA DE LEITE DE MERGO -->
-<div class="boss-card card-arena-mergo">
-    <div class="boss-overlay">
+     <!-- Card da chefe: Ama de Leite de Mergo -->
+        <div class="boss-card card-arena-mergo">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
 
-        <div class="boss-info">
-            <h3>Ama de Leite de Mergo</h3>
+                <!-- Informações da chefe (lado esquerdo) -->
+                <div class="boss-info">
+                    <h3>Ama de Leite de Mergo</h3> <!-- Nome da chefe -->
 
-            <div class="boss-bloco">
-                <h4>Lore (História)</h4>
-                <p>Uma entidade sombria e sem rosto que atua como a guardiã e protetora do recém-nascido Mergo no topo do Pesadelo de Mensis. Ela empunha múltiplas lâminas curvadas e manifesta uma névoa de pura escuridão.</p>
-            </div>
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
+                        <h4>Lore (História)</h4>
+                        <p>Uma entidade sombria e sem rosto que atua como a guardiã e protetora do recém-nascido Mergo no topo do Pesadelo de Mensis. Ela empunha múltiplas lâminas curvadas e manifesta uma névoa de pura escuridão.</p>
+                    </div>
 
-            <div class="boss-bloco">
-                <h4>Fraquezas e Estratégia</h4>
-                <p>Suas defesas elementais são equilibradas, mas ela pode ser envenenada. A melhor tática é se manter colado nas costas dela. Quando ela invocar a névoa escura e criar clones, corra em círculos pela arena até o efeito sumir.</p>
-            </div>
-        </div>
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>Suas defesas elementais são equilibradas, mas ela pode ser envenenada. A melhor tática é se manter colado nas costas dela. Quando ela invocar a névoa escura e criar clones, corra em círculos pela arena até o efeito sumir.</p>
+                    </div>
+                </div>
 
-        <div class="boss-imagem">
-            <img src="./imagens/mergo.png" alt="Ama de Leite PNG" class="png-boss-mergo">
-        </div>
+                <!-- Imagem da chefe (lado direito) -->
+                <div class="boss-imagem">
+                    <img src="./imagens/mergo.png" alt="Ama de Leite PNG" class="png-boss-mergo"> <!-- Imagem recortada da chefe -->
+                </div>
 
-    </div>
-</div>
-<!-- CARD 10: GEHRMAN -->
-<div class="boss-card card-arena-gehrman">
-    <div class="boss-overlay">
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card da chefe -->
 
-        <div class="boss-info">
-            <h3>Gehrman, o Primeiro Caçador</h3>
+     <!-- Card do chefe: Gehrman, o Primeiro Caçador -->
+        <div class="boss-card card-arena-gehrman">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
 
-            <div class="boss-bloco">
-                <h4>Lore (História)</h4>
-                <p>O primeiro caçador da história e o criador das armas de truque na antiga oficina. Preso no Sonho do Caçador por eras devido a um pacto com a Presença da Lua, ele cumpre o papel de guiar os novos caçadores e libertá-los do pesadelo através da morte.</p>
-            </div>
+                <!-- Informações do chefe (lado esquerdo) -->
+                <div class="boss-info">
+                    <h3>Gehrman, o Primeiro Caçador</h3> <!-- Nome do chefe -->
 
-            <div class="boss-bloco">
-                <h4>Fraquezas e Estratégia</h4>
-                <p>Vulnerável a dano de Raio e Arcane. Gehrman é extremamente rápido e usa a Foice do Sepultamento. A melhor estratégia é focar em contra-ataques com tiros de arma de fogo (Parry/Ataque Visceral) quando ele iniciar o movimento dos seus golpes.</p>
-            </div>
-        </div>
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
+                        <h4>Lore (História)</h4>
+                        <p>O primeiro caçador da história e o criador das armas de truque na antiga oficina. Preso no Sonho do Caçador por eras devido a um pacto com a Presença da Lua, ele cumpre o papel de guiar os novos caçadores e libertá-los do pesadelo através da morte.</p>
+                    </div>
 
-        <div class="boss-imagem">
-            <img src="./imagens/gehrman.png" alt="Gehrman PNG" class="png-boss-gehrman">
-        </div>
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>Vulnerável a dano de Raio e Arcane. Gehrman é extremamente rápido e usa a Foice do Sepultamento. A melhor estratégia é focar em contra-ataques com tiros de arma de fogo (Parry/Ataque Visceral) quando ele iniciar o movimento dos seus golpes.</p>
+                    </div>
+                </div>
 
-    </div>
-</div>
-<!-- CARD 13: PRESENÇA DA LUA -->
-<div class="boss-card card-arena-moon">
-    <div class="boss-overlay">
+                <!-- Imagem do chefe (lado direito) -->
+                <div class="boss-imagem">
+                    <img src="./imagens/gehrman.png" alt="Gehrman PNG" class="png-boss-gehrman"> <!-- Imagem recortada do chefe -->
+                </div>
 
-        <div class="boss-info">
-            <h3>Presença da Lua</h3>
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card do chefe -->
 
-            <div class="boss-bloco">
-                <h4>Lore (História)</h4>
-                <p>O Grande Antigo responsável pela criação do Sonho do Caçador e a verdadeira força por trás da caçada. Ela manipula os caçadores através de Gehrman para caçar outros Grandes Antigos, mantendo o ciclo de sangue infinito.</p>
-            </div>
+     <!-- Card da chefe: Presença da Lua -->
+        <div class="boss-card card-arena-moon">
+            <div class="boss-overlay"> <!-- Camada de efeito por cima do card -->
 
-            <div class="boss-bloco">
-                <h4>Fraquezas e Estratégia</h4>
-                <p>Vulnerável a dano de <strong>Fogo</strong> e ataques na cabeça. O golpe mais perigoso dela reduz sua vida instantaneamente para 1 HP; quando ela fizer isso, não se cure com frascos, corra para cima dela e bata sem parar para recuperar sua vida usando a mecânica de rali.</p>
-            </div>
-        </div>
+                <!-- Informações da chefe (lado esquerdo) -->
+                <div class="boss-info">
+                    <h3>Presença da Lua</h3> <!-- Nome da chefe -->
 
-        <!-- Estrutura padronizada para o PNG diminuir corretamente -->
-        <div class="boss-imagem">
-            <img src="./imagens/moon.png" alt="Presença da Lua PNG" class="png-boss">
-        </div>
+                    <div class="boss-bloco"> <!-- Bloco sobre a história -->
+                        <h4>Lore (História)</h4>
+                        <p>O Grande Antigo responsável pela criação do Sonho do Caçador e a verdadeira força por trás da caçada. Ela manipula os caçadores através de Gehrman para caçar outros Grandes Antigos, mantendo o ciclo de sangue infinito.</p>
+                    </div>
 
-    </div>
-</div>
+                    <div class="boss-bloco"> <!-- Bloco sobre a estratégia -->
+                        <h4>Fraquezas e Estratégia</h4>
+                        <p>Vulnerável a dano de <strong>Fogo</strong> e ataques na cabeça. O golpe mais perigoso dela reduz sua vida instantaneamente para 1 HP; quando ela fizer isso, não se cure com frascos, corra para cima dela e bata sem parar para recuperar sua vida usando a mecânica de rali.</p>
+                    </div>
+                </div>
+
+                <!-- Imagem da chefe (lado direito) -->
+                <div class="boss-imagem">
+                    <img src="./imagens/moon.png" alt="Presença da Lua PNG" class="png-boss"> <!-- Imagem recortada da chefe -->
+                </div>
+
+            </div> <!-- Fecha a camada de efeito -->
+        </div> <!-- Fecha o card da chefe -->
     </section>
     </main>
+    <!-- Rodapé do site -->
     <footer>
     <p>&copy; 2026 - Central Bloodborne. Desenvolvido por um Caçador de Yharnam.</p>
     </footer>

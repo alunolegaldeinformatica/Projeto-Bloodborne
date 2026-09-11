@@ -1,328 +1,454 @@
-/*Configuração geral*/
+/* --- CONFIGURAÇÃO GERAL E FUNDO DO SITE --- */
 body {
-    background-color: #121214;
-    color: #e1e1e6;        
-    font-family: 'Georgia', serif; 
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-}
-/*Adição do plano de fundo do site*/
-body {
-    /* O seu banner antigo agora vira o fundo infinito do site */
-    background-image: linear-gradient(rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), 
-    url("./imagens/fundo.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    
-    background-color: #121214;
-    color: #e1e1e6;
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0 0 20px 0;
-    line-height: 1.6;
-}
-.hero-overlay {
-    /* Reduzimos a opacidade da fumaça preta para 60% no topo e 80% na base (antes era 85% e 95%) */
-    background: linear-gradient(to bottom, rgba(10, 10, 12, 0.60) 0%, rgba(18, 18, 20, 0.80) 100%);
-    padding: 60px 40px;        
-}
-/*Estilização dos títulos*/
-h1, h2, h3 {
-    color: #990000;
-    padding-bottom: 5px;
-}
-/*Estilização da barra de navegação*/
-.barra-navegacao {
-    display: flex;
-    justify-content: center;   
-    background-color: #1a1a1e; /* Fundo cinza escuro para destacar no banner */
-    border: 1px solid #2d2d34; 
-    border-radius: 6px;        
-    padding: 10px 0;           
-    margin: 25px auto 40px auto; /* Centraliza e afasta dos textos */
-    max-width: 600px;          /* Limita a largura para não esticar na tela toda */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
-}
-/*Estilização dos botões*/
-.barra-navegacao a {
-    color: #a8a8b3;            /* Cor cinza clara elegante */
-    text-decoration: none;     /* Remove o sublinhado feio */
-    font-family: 'Georgia', serif;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 8px 24px;         /* Dá espaço para o botão respirar */
-    border-radius: 4px;        
-    transition: all 0.3s ease; /* Transição suave de cor */
-}
-/*Fazendo o botão acender em vermelho*/
-.barra-navegacao a:hover {
-    color: #ffffff;            
-    background-color: #8b0000; /* Vermelho-sangue oficial */
-    box-shadow: 0 0 10px rgba(139, 0, 0, 0.6); 
-}
-/*Design do banner*/
-.hero-banner {
-    background-image: url("./imagens/banner.png");
-    background-size: cover;
-    background-position: center 40%; 
-    background-attachment: scroll;    
-    border-bottom: 3px solid #8b0000; 
-    margin: 0 0px 40px 0px;       
-}
-/*Espaçamento das bordas do banner*/
-.hero-overlay {
-    background: linear-gradient(to bottom, rgba(10, 10, 12, 0.85) 0%, rgba(18, 18, 20, 0.95) 100%);
-    padding: 60px 40px;        /* Afasta o texto do topo e das laterais da tela */
-}
-/* Centralização dos títulos do banner*/
-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-header h1 {
-    font-size: 3.2rem;         /* Título principal grande e imponente */
-    margin-bottom: 15px;
-    border-bottom: none;       /* Remove a linha vermelha que corta o título */
+    /* Imagem de fundo com uma camada escura por cima */
+    background-image: linear-gradient(rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), url("./imagens/fundo.png");
+    background-size: cover;       /* Força a imagem a cobrir a tela toda */
+    background-attachment: fixed; /* Trava o fundo ao rolar a página (efeito fixo) */
+    background-position: center;   /* Centraliza a imagem de fundo */
+    background-color: #121214;     /* Cor de fundo reserva caso a imagem falhe */
+    color: #e1e1e6;                /* Cor do texto (cinza claro) */
+    font-family: 'Georgia', serif; /* Tipo da fonte do texto */
+    margin: 0;                     /* Remove as margens externas padrão */
+    padding: 0 0 20px 0;           /* Espaço interno apenas na parte inferior */
+    line-height: 1.6;              /* Espaçamento entre as linhas de texto */
 }
 
-#introducao {
-    max-width: 900px;          /* Centraliza o texto e impede que vá até as pontas */
-    margin: 0 auto;                   
+/* --- ELEMENTOS DE TEXTO E TÍTULOS --- */
+h1 {
+    color: #8b0000;
 }
+h2, h3 {
+    color: #a8a8b3;            /* Cor cinza claro elegante */
+    padding-bottom: 5px; /* Espaço inferior abaixo de cada título */
+}
+
+/* --- BANNER PRINCIPAL (HERO) --- */
+.hero-banner {
+    background-image: url("./imagens/banner.png"); /* Imagem de fundo do banner */
+    background-size: cover;          /* Força a imagem a cobrir o espaço do banner */
+    background-position: top center;  /* Alinha a imagem pelo topo e centro */
+    background-attachment: scroll;    /* Faz a imagem rolar junto com a página */
+    border-bottom: 3px solid #8b0000; /* Linha vermelha grossa na base do banner */
+    margin: 0 0 40px 0;               /* Margem para afastar o conteúdo abaixo */
+}
+
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(10, 10, 12, 0.70) 50%, rgba(18, 18, 20, 0.60) 100%); /* Degradê escuro */
+    padding: 60px 20px;        /* Espaço interno para afastar o texto das bordas */
+}
+
+header {
+    text-align: center;        /* Centraliza os textos do cabeçalho */
+    margin-bottom: 50px;       /* Espaço entre o topo e o menu de navegação */
+}
+
+header h1 {
+    font-size: 3.2rem;         /* Tamanho grande e imponente para o título */
+    margin-bottom: 15px;       /* Espaço entre o título e a frase de efeito */
+    border-bottom: none;       /* Remove linhas indesejadas abaixo do título */
+}
+
+/* --- BARRA DE NAVEGAÇÃO --- */
+.barra-navegacao {
+    display: flex;             /* Alinha os links um ao lado do outro */
+    justify-content: center;   /* Centraliza os links dentro da barra */
+    background-color: #1a1a1e; /* Cor de fundo cinza escura */
+    border: 1px solid #2d2d34; /* Borda fina ao redor da barra */
+    border-radius: 6px;        /* Arredonda os cantos da barra */
+    padding: 10px 0;           /* Espaço interno acima e abaixo dos links */
+    margin: 25px auto 40px auto; /* Centraliza a barra e cria espaço ao redor */
+    max-width: 600px;          /* Limita a largura máxima da barra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave sob a barra */
+}
+
+.barra-navegacao a {
+    color: #a8a8b3;            /* Cor do texto do link (cinza claro) */
+    text-decoration: none;     /* Remove o sublinhado padrão do link */
+    font-family: 'Georgia', serif; /* Tipo da fonte do link */
+    font-size: 1.1rem;         /* Tamanho da fonte */
+    font-weight: bold;         /* Deixa o texto em negrito */
+    padding: 8px 24px;         /* Espaço interno dos botões */
+    border-radius: 4px;        /* Arredonda os cantos dos botões */
+    transition: all 0.3s ease; /* Cria um efeito suave de transição */
+}
+
+.barra-navegacao a:hover {
+    color: #ffffff;            /* Muda a cor do texto para branco */
+    background-color: #8b0000; /* Cor de fundo vermelha (sangue) */
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.6); /* Brilho vermelho ao redor do botão */
+}
+
+/* --- SEÇÃO DE INTRODUÇÃO --- */
+#introducao {
+    max-width: 900px;          /* Limita a largura para o texto não esticar nas pontas */
+    margin: 0 auto;            /* Centraliza a seção inteira na tela */
+    text-align: center;        /* Centraliza o título H2 e os textos desta seção */
+}         
 
 #introducao h2 {
-    font-size: 2.2rem;
-    border-bottom: none;       /* Remove a linha vermelha abaixo de 'A Cidade de Yharnam' */
-    margin-bottom: 25px;
+    font-size: 2.2rem;         /* Tamanho do título secundário */
+    border-bottom: none;       /* Remove linhas indesejadas abaixo do título */
+    margin-bottom: 25px;       /* Espaço entre o título e o parágrafo */
+    text-align: center;        /* Garante que o título fique 100% no meio */
 }
+
 #introducao p {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: #e1e1e6;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra para ler perfeitamente sobre o fundo */
-    text-align: justify;
+    font-size: 1.15rem;        /* Tamanho do texto de leitura */
+    line-height: 1.8;          /* Espaço confortável entre as linhas */
+    color: #e1e1e6;            /* Cor do texto (cinza claro) */
+    margin-bottom: 20px;       /* Espaço de separação entre parágrafos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra preta para destacar o texto */
+    text-align: center;        /* Centralização do texto */
 }
 
-/*Centralização e limitação do tamanho da história para não espalhar na tela toda*/
+/* --- CONTAINER DO VÍDEO --- */
+#video-introducao {
+    margin: 80px auto !important; /* Afasta o vídeo da linha vermelha e da história */
+    max-width: 800px;          /* Limita o tamanho do vídeo na tela */
+    padding: 0 20px;           /* Evita que o vídeo cole nas bordas no celular */
+    background: none !important; /* Garante que não haja fundo cinza se misturando */
+    border: none !important;     /* Remove qualquer borda externa */
+    box-shadow: none !important; /* Remove a sombra externa */
+}
+
+#video-introducao iframe {
+    border: 2px solid #2d2d34 !important; /* Borda fina acinzentada direto no vídeo */
+    border-radius: 8px;        /* Arredonda os cantos do próprio player */
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8); /* Sombra pesada sob o vídeo */
+    transition: border-color 0.3s ease; /* Transição suave na borda */
+}
+
+#video-introducao iframe:hover {
+    border-color: #8b0000 !important; /* A borda do vídeo acende em vermelho escuro */
+}
+
+/* Limitação e centralização da seção História */
 #historia {
-    max-width: 800px;         
-    margin: 60px auto;       
-    padding: 0 20px;
+    width: 100% !important;     /* Obriga a seção a usar todo o espaço disponível na tela */
+    max-width: 1200px !important; /* CORREÇÃO: Força o limite máximo em 1200px anulando travas */         
+    margin: 60px auto !important; /* Centraliza o bloco na horizontal e dá espaço vertical */
+    padding: 0 20px !important;   /* Margem de segurança interna para não colar em celulares */
+    display: block !important;    /* Garante que ela se comporte como um bloco livre */
+    box-sizing: border-box !important; /* Protege o layout contra quebras de tamanho */
 }
 
-/*Destaca o título principal da Lore*/
 #historia h2 {
-    text-align: center;      
-    font-size: 2rem;
-    margin-bottom: 40px;
-    letter-spacing: 1px;    
+    text-align: center;        /* Centraliza o título principal da Lore */
+    font-size: 2.2rem;         /* Tamanho do título da história */
+    margin-bottom: 40px;       /* Espaço entre o título e a introdução abaixo */
+    letter-spacing: 1px;       /* Afasta levemente as letras para estilo */
 }
-
-/*Transformação dos subtítulos (H3) em cabeçalhos*/
 #historia h3 {
-    color: #ff3333;            
-    background-color: #16161a; 
-    padding: 10px 15px;        
-    border-left: 4px solid #8b0000; /*Barra vertical vermelha idêntica à de menus góticos*/
-    border-bottom: none;       
-    margin-top: 40px;          
-    margin-bottom: 15px;
-    font-size: 1.3rem;
+    color: #8b0000;
 }
 
-/* 4. Melhora o espaçamento e estilo dos parágrafos da história */
-#historia p {
-    font-size: 1.1rem;
-    line-height: 1.8;          /* Dá mais espaço entre as linhas de texto */
-    color: #cbcbd7;            /* Um tom cinza ligeiramente mais suave para não agredir a visão */
-    text-align: justify;       /* Alinha o texto perfeitamente nas duas margens */
-    margin-bottom: 20px;
+.historia-intro {
+    text-align: center;        /* Centraliza o texto de introdução na tela */
+    margin-bottom: 60px;       /* Afasta a introdução dos cards de baixo */
+    font-size: 1.15rem;        /* Tamanho confortável para leitura */
+    color: #a8a8b3;            /* Cor cinza claro elegante */
 }
-/*Estilização de imagens*/
+
+.lore-row {
+    display: flex !important;  /* Força o alinhamento horizontal (texto e foto lado a lado) */
+    align-items: center;       /* Centraliza o conteúdo interno na vertical */
+    justify-content: space-between; /* Distribui o espaço entre texto e foto */
+    gap: 50px;                 /* Espaço exato de 50px isolando o texto da foto */
+    margin-bottom: 60px;       /* Espaço de separação entre um card e o próximo */
+    background-color: rgba(22, 22, 26, 0.4); /* Fundo cinza escuro translúcido */
+    border: 1px solid #2d2d34; /* Borda fina para acabamento do card */
+    border-radius: 8px;        /* Arredonda os cantos da caixa */
+    padding: 35px;             /* Espaço interno para o conteúdo respirar */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5); /* Sombra suave sob o card */
+    width: 100% !important;    /* Obriga o card a se esticar no tamanho do #historia */
+    box-sizing: border-box !important; /* Protege o card contra quebras de layout */
+}
+
+.lore-reverse {
+    flex-direction: row-reverse !important; /* Inverte o lado: foto na esquerda, texto na direita */
+}
+
+.lore-text {
+    flex: 1 !important;        /* Força o texto a ocupar metade exata da largura */
+}
+
+.lore-text h3 {
+    background: none !important; /* Limpa fundos antigos herdados */
+    border: none !important;     /* Limpa bordas antigas herdadas */
+    padding: 0 !important;       /* Limpa paddings antigos herdados */
+    margin-top: 0 !important;    /* Remove margens superiores indesejadas */
+    margin-bottom: 15px !important; /* Espaço entre o título interno e o parágrafo */
+}
+
+.lore-image {
+    flex: 1 !important;        /* Força a caixa da foto a ocupar metade exata da largura */
+    display: flex !important;  /* Ativa o alinhamento para a imagem interna */
+    justify-content: center;   /* Mantém a foto perfeitamente centralizada na sua metade */
+}
+
+.lore-image img {
+    width: 100% !important;    /* Faz a imagem preencher a sua metade por completo */
+    max-width: 480px !important; /* Define o novo tamanho máximo maior para a foto */
+    height: 260px !important;  /* Altura fixa ajustada para dar imponência */
+    object-fit: cover !important; /* Encaixa e corta a foto no espaço sem amassar */
+    border-radius: 6px;        /* Arredonda os cantos da imagem */
+    border: 1px solid #3e3e4a; /* Adiciona uma borda fina cinza ao redor da foto */
+    margin: 0 !important;      /* Remove margens antigas obrigatoriamente */
+}
+
+/* Estilização padrão para todas as imagens do site */
 img {
-    max-width: 100%;  /*Ajuste para telas menores*/
-    height: auto;
-    border: none; 
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    max-width: 100%;   /* Impede que a imagem ultrapasse o tamanho da tela ou do bloco */
+    height: auto;      /* Mantém a proporção correta sem distorcer a foto */
+    border: none;      /* Remove qualquer borda padrão */
+    border-radius: 4px; /* Arredonda de leve os cantos da imagem */
+    margin-top: 10px;  /* Espaço acima da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
-/*Design dos cards de armas*/
 
+/* Configuração e centralização da seção de Armas */
+#armas {
+    max-width: 1300px;         /* Mantém o limite de largura igual ao do resto do site */
+    margin: 60px auto;         /* Centraliza a seção inteira na tela e dá espaço vertical */
+    text-align: center;        /* CORREÇÃO: Centraliza o título H2 e os textos de introdução da seção */
+    color: #a8a8b3;          /* Cor cinza claro elegante */
+}
+
+/* Garante que o título das armas herde a centralização corretamente */
+#armas h2 {
+    text-align: center;        /* Força o título principal a ficar 100% no meio */
+    margin-bottom: 20px;       /* Espaço entre o título e a descrição abaixo */
+    font-size: 40px;
+}
+
+/* Configuração moderna da lista de armas (Grade de 3 colunas) */
 #armas ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
+    list-style: none; /* Remove as bolinhas padrões da lista */
+    padding: 0;       /* Limpa o recuo esquerdo padrão da lista */
+    margin: 20px auto;   /* Cria espaço acima e abaixo da lista */
+    display: grid;                        /* Ativa o sistema de grade (Grid) */
+    grid-template-columns: repeat(5, 1fr); /* Cria 5 colunas iguais lado a lado */
+    gap: 20px;                             /* Cria espaço de 20px entre os cards */
+    max-width: 1300px;                     /* CORREÇÃO: Limita o tamanho do grid para os blocos ficarem juntos */                         
 }
 
-/*Transformando cada arma em um bloco card fechado*/
+/* Configuração individual de cada card de arma (O Pilar) */
 #armas ul li {
     display: flex;
-    align-items: center;      
-    background-color: #1a1a1e; 
-    border: 1px solid #2d2d34; 
-    border-radius: 8px;       
-    padding: 25px;            
-    margin-bottom: 25px;     
-    gap: 30px;                 
+    flex-direction: column;         /* Coloca o texto em cima e a imagem embaixo */
+    justify-content: space-between; /* Distribui o espaço interno por igual */
+    background-color: #141416;       /* Cor de fundo escura do card */
+    border: 1px solid #232326;       /* Borda fina ao redor do card */
+    border-radius: 8px;              /* Arredonda os cantos do card */
+    padding: 0;                      /* Remove paddings para a imagem colar nas pontas */
+    overflow: hidden;                /* Corta a imagem nos cantos arredondados */
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    
+    /* ADIÇÕES PARA AFINAR OS PILARES */
+    max-width: 320px;                /* CORREÇÃO: Limita a largura do card inteiro para deixá-lo fino */
+    width: 100%;                     /* Permite que ele use o espaço até o limite definido */
+    margin: 0 auto;                  /* Centraliza cada um dos 3 pilares na sua respectiva coluna */
 }
 
-/*Controle de texto dentro do card*/
+/* Efeito ao passar o mouse sobre o card de arma */
+#armas ul li:hover {
+    transform: translateY(-2px); /* Move o card levemente para cima */
+    border-color: #5c1414;        /* Muda a borda para vermelho escuro */
+}
+
+/* Controle do texto dentro do card de arma */
 #armas ul li p {
-    flex: 1;                   
-    margin: 0;
-    font-size: 1.1rem;       
-    color: #e1e1e6;
-    line-height: 1.6;
+    flex: 1;                   /* Faz o texto ocupar todo o espaço útil do card */
+    padding: 15px 15px 5px 15px;  /* Espaço interno para o texto não encostar nas bordas */
+    margin: 0;                 /* Remove margens externas padrão do parágrafo */
+    font-size: 0.95rem;           /* Tamanho de fonte ideal para leitura interna */      
+    color: #a8a8b3;            /* Cor do texto (cinza claro) para evitar cansaço visual */
+    line-height: 1.5;          /* Espaçamento entre as linhas do texto */
 }
 
-/*Título das armas em vermelho sangue*/
+/* Título em destaque das armas dentro do card */
 #armas ul li p strong {
-    color: #990000;
-    font-size: 1.2rem;
-    display: block;        
-    margin-bottom: 8px;      
+    color: #990000;         /* Cor do título (vermelho sangue) */
+    font-size: 1.15rem;       /* Tamanho da fonte em destaque */
+    display: block;          /* Força o título a quebrar a linha sozinho */
+    margin-bottom: 8px;      /* Espaço entre o título e a descrição abaixo */
 }
 
-/*Controle de imagem da arma*/
+/* Controle da imagem da arma dentro do card */
 #armas ul li img {
-    width: 320px;          
-    height: auto;
-    border-radius: 6px;
-    border: 1px solid #3e3e4a;
-    flex-shrink: 0;            
-    margin: 0 !important;
+    width: auto !important;          /* CORREÇÃO: Faz a foto voltar a ocupar toda a largura do card fino */
+    max-width: 90% !important;      /* Remove qualquer limite individual que afastava a foto */
+    height: auto;                    /* Mantém a proporção da imagem sem distorcer */
+    display: block;                  /* Elimina espaços vazios na base da foto */
+    margin: 0 auto 15px !important;            /* CORREÇÃO: Remove margens para a foto colar perfeitamente nas laterais */
+    align-self: center;
+    background: none;                /* Sem fundos isolados */
+    border-top: none;                /* Sem linhas divisórias */
 }
 
-/* Caixa principal do chefe */
-.boss-card {
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #2d2d34;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+/* Configuração e centralização da seção de Chefes */
+#chefes {
+    max-width: 1200px;         /* Mantém o limite de largura igual ao do site */
+    margin: 80px auto;         /* Centraliza a seção e dá um ótimo espaço vertical */
+    text-align: center;        /* CORREÇÃO: Centraliza o título H2 e o parágrafo da introdução */
 }
 
-/* Cortina escura interna para garantir a leitura do texto */
-.boss-overlay {
-    background: linear-gradient(to right, rgba(12, 12, 14, 0.95) 50%, rgba(12, 12, 14, 0.4) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 35px;
-    gap: 40px;
-}
-
-/* Alinhamento dos textos na esquerda */
-.boss-info {
-    flex: 1;
-    max-width: 600px;
-}
-
-.boss-info h3 {
-    font-size: 2rem;
-    color: #ff3333;
-    margin-top: 0;
-    margin-bottom: 25px;
-    border-bottom: none;
-}
-
-.boss-bloco {
+/* Garante que o título dos chefes herde a centralização corretamente */
+#chefes h2 {
+    text-align: center;        /* Força o título principal a ficar 100% no meio */
     margin-bottom: 20px;
+    font-size: 40px;       /* Espaço entre o título e a descrição abaixo */
 }
 
+/* Caixa principal do card de cada chefe */
+.boss-card {
+    background-size: cover;    /* Preenche todo o fundo com a imagem da arena */
+    background-position: center; /* Centraliza a imagem de fundo do card */
+    border: 1px solid #2d2d34; /* Borda fina escura ao redor do card */
+    border-radius: 8px;        /* Arredonda os cantos do card */
+    margin-bottom: 40px;       /* Espaço de separação entre um card e outro */
+    overflow: hidden;          /* Corta o conteúdo que passar dos cantos arredondados */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6); /* Sombra escura e realista sob o card */
+}
+
+/* Cortina escura sobre a imagem da arena para dar leitura */
+.boss-overlay {
+    background: linear-gradient(to right, rgba(12, 12, 14, 0.82) 50%, rgba(12, 12, 14, 1.0) 100%);
+    display: flex;                 /* Coloca as informações e a imagem lado a lado */
+    align-items: center;           /* Alinha verticalmente os itens pelo centro */
+    justify-content: space-between; /* Distribui o espaço entre texto e imagem */
+    padding: 35px;                 /* Espaço interno para afastar das bordas do card */
+    gap: 40px;                     /* Cria um espaço de 40px entre o texto e a imagem */
+}
+
+/* Alinhamento dos textos na esquerda dentro do card */
+.boss-info {
+    flex: 1;           /* Faz o texto ocupar todo o espaço útil na esquerda */
+    max-width: 600px;  /* Define a largura máxima ideal para o texto */
+}
+
+/* Estilização do nome do chefe */
+.boss-info h3 {
+    font-size: 2rem;      /* Tamanho grande e imponente para o nome */
+    color: #ff3333;       /* Cor do título (vermelho vivo) */
+    margin-top: 0;        /* Remove margem superior indesejada */
+    margin-bottom: 25px;  /* Espaço entre o nome e os blocos abaixo */
+    border-bottom: none;  /* Garante que não tenha linha embaixo do título */
+}
+
+/* Espaçamento entre os blocos (Lore e Estratégia) */
+.boss-bloco {
+    margin-bottom: 20px;  /* Cria espaço abaixo de cada bloco */
+}
+
+/* Títulos internos (Lore / Fraquezas) */
 .boss-bloco h4 {
-    color: #8b0000; 
-    font-size: 1.1rem;
-    margin: 0 0 5px 0;
-    font-family: 'Georgia', serif;
+    color: #8b0000;       /* Cor vermelha escura clássica */
+    font-size: 1.1rem;    /* Tamanho da fonte em destaque */
+    margin: 0 0 5px 0;    /* Remove margens e deixa espaço apenas abaixo */
+    font-family: 'Georgia', serif; /* Tipo de fonte elegante */
 }
 
+/* Parágrafos internos da lore e estratégia */
 .boss-bloco p {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #cbcbd7;
-    text-align: justify;
+    margin: 0;            /* Remove margens padrão do parágrafo */
+    font-size: 1rem;      /* Tamanho ideal para leitura interna */
+    line-height: 1.6;     /* Espaçamento confortável entre linhas */
+    color: #cbcbd7;       /* Cor cinza claro confortável para ler */
+    text-align: justify;  /* Alinha o texto perfeitamente nas duas margens */
 }
 
-/* Alinhamento da Imagem na direita */
+/* --- IMAGENS DOS CHEFES (PNG) --- */
+
+/* Alinhamento da área da imagem na direita */
 .boss-imagem {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px; /* Define uma largura máxima fixa para a área da imagem */
-    height: 100%;
+    flex-shrink: 0;            /* Impede que o bloco da imagem seja esmagado */
+    display: flex;             /* Ativa o alinhamento flexível */
+    justify-content: center;   /* Centraliza o monstro na horizontal */
+    align-items: center;       /* Centraliza o monstro na vertical */
+    width: 300px;              /* Largura fixa reservada para a área da foto */
+    height: 100%;              /* Ocupa toda a altura disponível do card */
 }
 
-/* Estilo do boneco em PNG */
+/* Estilo padrão do boneco em PNG */
 .png-boss {
-    width: auto;
-    height: 300px;
-    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8)); /* Sombra no contorno do boneco */
-    margin: 0 !important;
-    border: none !important;
+    width: auto;               /* Ajusta a largura proporcionalmente */
+    height: 300px;             /* Altura fixa do monstro */
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8)); /* Sombra realista ao redor do PNG */
+    margin: 0 !important;      /* Remove margens antigas obrigatoriamente */
+    border: none !important;    /* Remove bordas antigas obrigatoriamente */
 }
-/* FORÇA TODOS OS PERSONAGENS EM PNG A TEREM A MESMA ALTURA */
+
+/* Força todos os personagens a manterem o mesmo tamanho padrão */
 .boss-imagem img {
-    height: 300px !important;             /* Define a altura idêntica para todos os monstros */
-    width: 250px !important;               /* Deixa a largura se ajustar sozinha para a foto não amassar */
-    object-fit: contain;       /* Garante que o desenho caiba perfeitamente no espaço */
+    height: 300px !important;   /* Define a altura idêntica para todos os monstros */
+    width: auto !important;     /* CORREÇÃO: Deixa a largura se ajustar sozinha para não amassar */
+    object-fit: contain;        /* Garante que o desenho caiba no espaço sem cortes */
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8)); /* Sombra bonita no contorno do PNG */
-    border: none !important;    /* Garante que nenhuma foto ganhe aquela moldura cinza */
-    padding: 0 !important;
-    margin: 0 !important;
-    max-width: 500%;
-    max-height: 550px;
+    border: none !important;    /* Remove qualquer moldura cinza herdada */
+    padding: 0 !important;      /* Remove espaçamentos internos */
+    margin: 0 !important;      /* Remove espaçamentos externos */
+    max-width: 100%;            /* Impede a imagem de estourar a caixa da direita */
+    max-height: 300px;          /* Limita a altura máxima permitida */
 }
-/*Besta Clerical*/
+
+/* --- IMAGENS DE FUNDO DAS ARENAS DOS CHEFES --- */
+
 .card-arena-clerical {
-    background-image: url(./imagens/bannerbeast.jpeg); 
+    background-image: url("./imagens/bannerbeast.jpeg"); /* Fundo: Fera Clerical */
 }
-/*Padre Gascoigne*/
 
 .card-arena-gascoigne {
-    background-image: url(./imagens/bannergascoigne.jpg); 
+    background-image: url("./imagens/bannergascoigne.jpg"); /* Fundo: Padre Gascoigne */
 }
-/*Vigária Amelia*/
+
 .card-arena-amelia {
-    background-image: url(./imagens/banneramelia.jpg); 
+    background-image: url("./imagens/banneramelia.jpg"); /* Fundo: Vigária Amelia */
 }
-/*Sombras*/
+
 .card-arena-sombras {
-    background-image: url(./imagens/bannershadows.jpg);
+    background-image: url("./imagens/bannershadows.jpg"); /* Fundo: Sombras de Yharnam */
 }
-/*Rom*/
+
 .card-arena-rom {
-    background-image: url(./imagens/bannerrom.png);
+    background-image: url("./imagens/bannerrom.png"); /* Fundo: Rom, a Aranha Vazia */
 }
-/*Renascido*/
+
 .card-arena-renascido {
-    background-image: url(./imagens/bannerrenascido.png);
+    background-image: url("./imagens/bannerrenascido.png"); /* Fundo: O Renascido */
 }
-/*Amygdala*/
+
 .card-arena-amygdala {
-    background-image: url(./imagens/banneramygdala.jpg)
+    background-image: url("./imagens/banneramygdala.jpg"); /* Fundo: Amygdala */
 }
-/*Micolash*/
+
 .card-arena-micolash {
-    background-image: url(./imagens/bannermicolash.png);
+    background-image: url("./imagens/bannermicolash.png"); /* Fundo: Micolash */
 }
-/*Mergo*/
+
 .card-arena-mergo {
-    background-image: url(./imagens/bannermergo.png);
+    background-image: url("./imagens/bannermergo.png"); /* Fundo: Ama de Leite de Mergo */
 }
-/* Gehrman, o Primeiro Caçador */
+
 .card-arena-gehrman {
-    background-image: url(./imagens/bannergehrman.jpg);
+    background-image: url("./imagens/bannergehrman.jpg"); /* Fundo: Gehrman */
 }
-/* Presença da Lua */
+
 .card-arena-moon {
-    background-image: url(./imagens/bannermoon.png);
+    background-image: url("./imagens/bannermoon.png"); /* Fundo: Presença da Lua */
+}
+
+/* --- ESTILIZAÇÃO DO RODAPÉ --- */
+footer {
+    background-color: #16161a; /* Fundo escuro combinando com os subtítulos */
+    border-top: 2px solid #8b0000; /* Linha vermelha no topo do rodapé */
+    padding: 20px;             /* Espaço interno para o texto respirar */
+    text-align: center;        /* Centraliza o texto do caçador */
+    margin-top: 60px;          /* Afasta o rodapé do último card de chefe */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;        /* Texto sutilmente menor */
+    color: #a8a8b3;            /* Cor cinza claro elegante */
 }
