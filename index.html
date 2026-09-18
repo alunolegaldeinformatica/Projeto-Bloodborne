@@ -30,10 +30,12 @@
                 
                 <!-- Menu de navegação -->
                 <nav class="barra-navegacao">
-                    <a href="#introducao">A Caçada</a> <!-- Link para a introdução -->
-                    <a href="#historia">História</a> <!-- Link para a história -->
-                    <a href="#armas">Armas</a> <!-- Link para as armas -->
-                    <a href="#chefes">Chefes</a> <!-- Link para os chefes -->
+                    <a href="#introducao">A Caçada</a> 
+                    <a href="#historia">História</a> 
+                    <a href="#armas">Armas</a> 
+                    <a href="#atributos">Atributos</a>
+                    <a href="#chefes">Chefes</a> 
+                    <a href="#contato">Inscrição</a>
                 </nav>
             </header>
 
@@ -52,24 +54,25 @@
 
     <main>
     <!--Vídeo Complementar-->
-    <section id="video-introducao" style="margin: 40px auto; max-width: 800px; text-align: center;">
-        <figure style="margin: 0; padding: 0;"> <!-- Bloco para organizar a mídia -->
+    <section id="video-introducao">
+        <div class="container-trailer">
+            <figure> <!-- Bloco para organizar a mídia -->
             
-            <!-- Janela para o vídeo do YouTube -->
-            <iframe width="100%" height="450" 
-                src="https://www.youtube.com/embed/G203e1HhixY?si=9n-iTNk0kN2YseXo"
-                title="Bloodborne Trailer" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen
-                style="border-radius: 8px; border: 1px solid #2d2d34; box-shadow: 0 8px 20px rgba(0,0,0,0.6);">
-            </iframe>
+                <!-- Janela para o vídeo do YouTube -->
+                <iframe width="100%" height="450" 
+                    src="https://www.youtube.com/embed/G203e1HhixY?si=9n-iTNk0kN2YseXo"
+                    title="Bloodborne Trailer" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             
-            <!-- Legenda do vídeo -->
-            <figcaption style="margin-top: 12px; font-size: 0.95rem; color: #a8a8b3; font-style: italic;">
-                Assista ao trailer oficial de lançamento de Bloodborne e sinta a atmosfera sombria de Yharnam.
-            </figcaption>
-        </figure>
+                <!-- Legenda do vídeo -->
+                <figcaption>
+                    Assista ao trailer oficial de lançamento de <span>Bloodborne</span> e sinta a atmosfera sombria de Yharnam.
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
     <!-- Seção completa da História/Lore -->
@@ -146,6 +149,55 @@
         </ul> <!-- Fecha a lista de armas -->
     </section> <!-- Fecha a seção de armas -->
 
+    <!-- Seção de Atributos de Nível -->
+    <section class="secao-atributos" id="atributos">
+        <div class="container-atributos">
+            <h2>Atributos de Evolução (Status)</h2>
+            <p class="subtitulo-atributos">"Gaste seus Ecos de Sangue na Boneca do Sonho do Caçador para transcender a caçada humana."</p>
+        
+            <table class="tabela-status">
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Efeito no Personagem</th>
+                        <th>Foco de Build (Armas)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="destaque-vermelho">Vitalidade</strong></td>
+                        <td>Aumenta os pontos de vida (HP) máximos do caçador.</td>
+                        <td>Fundamental para todas as classes e sobrevivência geral.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="destaque-vermelho">Resistência</strong></td>
+                        <td>Aumenta a barra de estamina (energia para atacar/esquivar) e defesas físicas.</td>
+                        <td>Essencial para manter a alta mobilidade e sequências de golpes.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="destaque-vermelho">Força</strong></td>
+                        <td>Aumenta o dano de armas pesadas e brutas da Oficina.</td>
+                        <td>Machado de Caçador, Cutelo-Serra e Espada Sagrada de Ludwig.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="destaque-vermelho">Perícia</strong></td>
+                        <td>Aumenta o dano de armas ágeis e potencializa o dano do Ataque Visceral (crítico).</td>
+                        <td>Bengala-Chicote, Lâminas da Misericórdia e Reiterpallasch.</td>
+                        </tr>
+                    <tr>
+                        <td><strong class="destaque-vermelho">Matiz de Sangue</strong></td>
+                        <td>Aumenta o poder destrutivo de armas de fogo e armas de dano de sangue.</td>
+                        <td>Pistola de Caçador, Bacamarte e a katana Chikage.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="destaque-vermelho">Arcano</strong></td>
+                        <td>Aumenta o dano elemental (Fogo/Raio) e permite usar as Ferramentas de Caçador (magias).</td>
+                        <td>Lâmina de Enterro, Roda de Logarius e magias dos Grandes.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
     <!-- Seção de Chefes -->
     <section id="chefes">
         <h2>Os Grandes Desafios da Caçada</h2> <!-- Título principal da seção -->
@@ -448,10 +500,44 @@
             </div> <!-- Fecha a camada de efeito -->
         </div> <!-- Fecha o card da chefe -->
     </section>
+
+     <!-- Seção do Formulário de Contato -->
+    <section class="section-formulario" id="contato">
+                <div class="container-formulario">
+                    <h2>Inscreva-se na Caçada</h2>
+                    <p class="subtitulo-formulario">"Deixe seu nome nos registros de Yharnam para receber novos relatos sobre a lore, armas e chefes."</p>
+        
+                    <form action="#" method="POST" class="form-caçador">
+                <div class="grupo-campo">
+                    <label for="nome">Nome do Caçador</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Laurence, o Primeiro Vicário" required>
+                </div>
+            
+                <div class="grupo-campo">
+                    <label for="email">E-mail de Contato</label>
+                    <input type="email" id="email" name="email" placeholder="seu-sangue@clinica.com" required>
+                </div>
+                    <button type="submit" class="botao-enviar">Unir-se à Caçada</button>
+                    </form>
+                </div>
+    </section>
     </main>
-    <!-- Rodapé do site -->
-    <footer>
-    <p>&copy; 2026 - Central Bloodborne. Desenvolvido por um Caçador de Yharnam.</p>
+    <!-- Rodapé do Site -->
+    <footer class="rodape-gotico">
+        <div class="container-rodape">
+            <div class="simbolo-cacador"></div>
+            <p class="frase-rodape">"Que você encontre seu valor no mundo desperto."</p>
+            <p class="creditos">
+                <strong>Central Bloodborne</strong> &copy; 2026. Desenvolvido por Enrico Pavesi.<br>
+                Este é um projeto acadêmico. Todos os direitos sobre a obra original pertencem à <span>FromSoftware</span> e <span>Sony Interactive Entertainment</span>.
+            </p>
+        </div>
     </footer>
 </body>
+    <!--NOTA DE ESCLARECIMENTO:
+    Professora, como sou um fã real do universo de Bloodborne, acabei me empolgando muito com a estética e a imersão do projeto. 
+    Para alcançar os efeitos avançados de contraste gótico e os cards dinâmicos translúcidos, 
+    utilizei o suporte de IA como ferramenta de consultoria de design e refinamento de CSS. 
+    Toda a base lógica, hierarquia de tags HTML e produção do conteúdo escrito foram elaboradas integralmente por mim, respeitando os conceitos aprendidos em aula.
+    -->
 </html>
