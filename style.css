@@ -752,10 +752,10 @@ img {
     transform: translateY(0);
 }
 
-/* --- ESTILIZAÇÃO DO RODAPÉ --- */
+/* Estilização do rodapé */
 .rodape-gotico {
     background-color: #0b0b0d; /* Fundo quase preto sólido */
-    border-top: 2px solid #c91a1a; /* Linha vermelha viva separando o site */
+    border-top: 2px solid #c91a1a; /* Linha vermelha separando o site */
     padding: 40px 20px;
     margin-top: 80px;
     text-align: center;
@@ -769,7 +769,7 @@ img {
 .frase-rodape {
     font-family: 'Georgia', serif;
     font-style: italic;
-    color: #aa9e93; /* Tom pergaminho envelhecido */
+    color: #aa9e93;
     font-size: 1.1rem;
     margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
@@ -777,7 +777,7 @@ img {
 
 .creditos {
     font-family: 'Arial', sans-serif;
-    color: #666673; /* Cinza escuro discreto */
+    color: #666673; 
     font-size: 0.85rem;
     line-height: 1.8;
 }
@@ -787,12 +787,115 @@ img {
 }
 
 .creditos span {
-    color: #c91a1a; /* Destaca os nomes das empresas em vermelho */
+    color: #c91a1a; 
 }
 
-/* NOTA DE ESCLARECIMENTO:
-    Professora, como sou um fã real do universo de Bloodborne, acabei me empolgando muito com a estética e a imersão do projeto. 
-    Para alcançar os efeitos avançados de contraste gótico e os cards dinâmicos translúcidos, 
-    utilizei o suporte de IA como ferramenta de consultoria de design e refinamento de CSS. 
-    Toda a base lógica, hierarquia de tags HTML e produção do conteúdo escrito foram elaboradas integralmente por mim, respeitando os conceitos aprendidos em aula.
-/*
+/* AJUSTES DE RESPONSIVIDADE (CELULAR E TABLET) */
+
+/* Garante que nenhuma imagem estoure a largura da tela */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  
+  /* Corrige o menu para os links não quebrarem */
+  nav ul, nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+
+  nav a, nav li {
+    width: auto !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Empilha os 4 cards das armas */
+  #armas > div, 
+  .armas-container, 
+  .cards-armas,
+  section:has(h2) > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Faz cada card ocupar a largura inteira no celular */
+  #armas article, 
+  #armas .card,
+  .arma-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Rolar a tabela de atributos sem cortar */
+  table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    white-space: normal !important;
+  }
+
+  /* Cards dos chefes */
+  #chefes article,
+  #chefes .card,
+  .chefe-card,
+  article {
+    display: flex !important;
+    flex-direction: column-reverse !important; /* Coloca a imagem em cima do texto */
+    align-items: center !important;
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  /* Aumenta a imagem do chefe no celular para não ficar minúscula */
+  #chefes img,
+  .chefe-card img,
+  article img {
+    width: 80% !important;
+    max-width: 280px !important;
+    margin: 0 auto 15px auto !important;
+  }
+
+  /* Ajusta o formulário */
+  form {
+    width: 100% !important;
+    padding: 15px !important;
+  }
+}
+
+/* Botões flutuantes (Música / Voltar ao Topo) */
+#btn-musica, #btn-topo {
+  position: fixed;
+  bottom: 20px;
+  z-index: 1000;
+  background-color: #1a1a1e;
+  color: #e0d8c3;
+  border: 1px solid #8a1c1c;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s;
+}
+
+#btn-musica:hover, #btn-topo:hover {
+  background-color: #8a1c1c;
+  color: #ffffff;
+}
+
+#btn-musica {
+  left: 20px;
+}
+
+#btn-topo {
+  right: 20px;
+  display: none; /* Começa escondido e aparece quando rola a página */
+}
